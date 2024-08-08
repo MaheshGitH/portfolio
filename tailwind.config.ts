@@ -12,6 +12,9 @@ const config: Config = {
         brief: "#1B263B",
         rest: "#0D1B2A",
       },
+      textColor: {
+        accent: "#CBCBCB",
+      },
     },
   },
   plugins: [],
