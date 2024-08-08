@@ -15,6 +15,9 @@ const config: Config = {
       textColor: {
         accent: "#CBCBCB",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [],
