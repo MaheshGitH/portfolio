@@ -9,7 +9,6 @@ const config: Config = {
     extend: {
       backgroundColor: {
         intro: "#415A77",
-        brief: "#1B263B",
         rest: "#0D1B2A",
       },
       textColor: {

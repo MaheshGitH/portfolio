@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --gradient-deg: 177.5deg;
+}
+
+.bg-brief {
+  background-image: linear-gradient(
+    var(--gradient-deg),
+    #1b263b 98%,
+    transparent 99%
+  );
+}
+
+@media (min-width: 500px) {
+  :root {
+    --gradient-deg: 178deg;
+  }
+}
+
+@media (min-width: 580px) {
+  :root {
+    --gradient-deg: 178.5deg;
+  }
+}
+
+@media (min-width: 740px) {
+  :root {
+    --gradient-deg: 179deg;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --gradient-deg: 179.5deg;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --gradient-deg: 180deg;
+  }
+}
