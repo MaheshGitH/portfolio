@@ -36,7 +36,7 @@ const AnimatedCounter = ({ to, toolName, iconUri, customSize }: Props) => {
       <img
         className={customSize ? customSize : " size-8 "}
         src={iconUri}
-        alt="figma"
+        alt={toolName}
       />
       <p className="text-accent text-xl font-medium">{toolName}</p>
       <span className=" text-lg font-medium" ref={spanRef} />

@@ -1,47 +1,32 @@
-import React, { RefObject, useEffect } from "react";
-import { RiveState } from "rive-react";
+import { useInView } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { useRive } from "rive-react";
 
-type Data = { monthYear: string; description: string };
+const AnimatedRive = () => {
+  const spanRef = useRef<HTMLSpanElement>(null);
 
-interface Props {
-  riveInstance: RiveState;
-  reference: RefObject<HTMLSpanElement>;
-  data: Data;
-}
+  const inView = useInView(spanRef, { once: true, amount: 1 });
 
-const AnimatedRive = ({ riveInstance, reference, data }: Props) => {
+  const { rive, RiveComponent } = useRive({
+    src: "/riveAnimation.riv",
+    autoplay: false,
+  });
+
   useEffect(() => {
-    if (!riveInstance) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          if (riveInstance.rive) {
-            riveInstance.rive.play("Rotate");
-          }
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
+    if (!rive) return;
+    if (!inView) return;
 
-    observer.observe(reference.current);
+    rive.play();
 
-    return () => observer.disconnect();
-  }, [riveInstance]);
+    return () => rive.stop();
+  }, [rive, inView]);
+
   return (
-    <div className="flex gap-2 xl:gap-5">
-      <span ref={reference} className="flex flex-col items-center">
-        <riveInstance.RiveComponent className=" h-32 w-6 xl:h-40 xl:w-8" />
+    <>
+      <span className="h-[120px] xl:h-[140px]" ref={spanRef}>
+        <RiveComponent className="w-4 h-[120px] xl:h-[140px]" />
       </span>
-      <div className="flex flex-col gap-3 lg:gap-5 pb-2">
-        <p className="font-black text-xl lg:text-2xl duration-500">
-          {data.monthYear}
-        </p>
-        <p className="text-accent text-[14px] lg:text-[16px] w-4/5">
-          {data.description}
-        </p>
-      </div>
-    </div>
+    </>
   );
 };
 
