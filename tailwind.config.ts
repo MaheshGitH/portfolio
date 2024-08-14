@@ -13,6 +13,11 @@ const config: Config = {
       },
       textColor: {
         accent: "#CBCBCB",
+        link: "#415A77",
+      },
+      borderColor: {
+        link: "#415A77",
+        accent: "#CBCBCB",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

@@ -34,3 +34,47 @@ export const brieJourney = {
     description: `"I built my first React app, 'Something I Like,' and then continued learning Next.js."`,
   },
 };
+
+export const projects = [
+  {
+    name: "Something I Like",
+    techStack: ["HTML", "CSS"],
+    projectOverview: `"This is my first website, built with plain HTML and CSS. It's not a real-world project, but this is where my journey as a web developer started. It is a single-page site."`,
+    iconFolder: "front-end",
+    customHeight: "max-h-[850px]",
+    links: {
+      website: "https://somethingilike.com",
+    },
+  },
+
+  {
+    name: "YT - Stats",
+    techStack: ["Typescript", "React"],
+    projectOverview: `"This is a React app that displays the stats of a specific YouTube channel using the YouTube API. It is a single-page site where you can view channel information from YouTube."`,
+    iconFolder: "front-end",
+    customHeight: "max-h-[850px]",
+    links: {
+      website: "https://yt-stats.com",
+      blog: "https://yt-stats.com/blog",
+    },
+  },
+
+  {
+    name: "Circlchat",
+    techStack: [
+      "Typescript",
+      "Next",
+      "MongoDB",
+      "Socket io",
+      "Prisma",
+      "Auth js",
+    ],
+    projectOverview: `"This project features real-time communication focused solely on group discussions. It is multi-paged, and users can invite others and sign in using Google, GitHub, or passwordless login."`,
+    iconFolder: "circlchat",
+    customHeight: "max-h-[1000px]",
+    links: {
+      website: "https://circlchat.com",
+      blog: "https://circlchat.com/blog",
+    },
+  },
+];
