@@ -15,14 +15,14 @@ const DataBase = () => {
         />
         <AnimatedCounter
           iconUri="/database/mongodb.svg"
-          toolName="Mongodb"
+          toolName="MongoDB"
           to={85}
         />
         <AnimatedCounter
           customSize="h-7 w-11"
           iconUri="/database/mysql.svg"
           toolName="MySQL"
-          to={70}
+          to={60}
         />
       </div>
     </div>

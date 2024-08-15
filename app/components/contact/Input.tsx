@@ -45,7 +45,7 @@ const Input = ({ children, icon, name, success }: Props) => {
             scale: isFocused || value ? 0.9 : 1,
             top: isFocused || value ? -12 : 8,
             left: isFocused || value ? 12 : 15,
-            color: isFocused || value ? "white" : "#cbcbcb",
+            color: isFocused || value ? "#ffffff" : "#cbcbcb",
           }}
           transition={{ ease: "easeOut", duration: 0.2 }}
         >

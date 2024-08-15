@@ -1,5 +1,5 @@
 import React from "react";
-import { SendIcon } from "./Icons";
+import { SendIcon } from "../Icons";
 import { useFormStatus } from "react-dom";
 
 const Send = () => {

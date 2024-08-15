@@ -2,7 +2,7 @@
 
 import Input from "./Input";
 import React from "react";
-import { PersonIcon, MailIcon } from "./Icons";
+import { PersonIcon, MailIcon } from "../Icons";
 import Send from "./Send";
 import TextArea from "./TextArea";
 import contactForm from "../../../server-actions/contactForm";

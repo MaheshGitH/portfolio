@@ -1,9 +1,5 @@
 import React from "react";
-import Input from "./Input";
-import TextArea from "./TextArea";
 import Wave from "./Wave";
-import { MailIcon, PersonIcon } from "./Icons";
-import Send from "./Send";
 import Form from "./Form";
 
 const Contact = () => {
