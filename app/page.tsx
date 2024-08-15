@@ -4,6 +4,8 @@ import BriefJourney from "./components/brief/BriefJourney";
 import Test from "./Test";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Input from "./components/contact/Input";
 
 export default function Page() {
   return (
@@ -12,6 +14,7 @@ export default function Page() {
       <BriefJourney />
       <Skills />
       <Projects />
+      <Contact />
 
       {/* <Test></Test> */}
     </main>

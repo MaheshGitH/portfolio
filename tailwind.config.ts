@@ -19,6 +19,9 @@ const config: Config = {
         link: "#415A77",
         accent: "#CBCBCB",
       },
+      stroke: {
+        accent: "#cbcbcb",
+      },
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
