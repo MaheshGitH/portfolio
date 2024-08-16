@@ -4,10 +4,11 @@ import { BsWrench } from "react-icons/bs";
 import { BsGearWideConnected } from "react-icons/bs";
 import SocialIcons from "./SocialIcons";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Introduction = () => {
   return (
-    <section className="bg-intro text-white pt-6 pl-5">
+    <section id="introduction" className="bg-intro text-white pt-6 pl-5">
       <div className="max-w-[1700px] w-full mx-auto flex flex-col gap-0 lg:gap-20 duration-500">
         <Logo />
         <div className="pt-6 pl-5 flex flex-col gap-10 lg:gap-40 ml-0 lg:ml-48 xl:ml-56 duration-500">

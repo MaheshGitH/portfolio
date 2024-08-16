@@ -6,6 +6,10 @@
   --gradient-deg: 177.5deg;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-brief {
   background-image: linear-gradient(
     var(--gradient-deg),

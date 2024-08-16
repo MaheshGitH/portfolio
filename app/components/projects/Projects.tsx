@@ -4,7 +4,7 @@ import ProjectLayout from "./ProjectLayout";
 
 const Projects = () => {
   return (
-    <section className="mt-px bg-rest text-white overflow-clip">
+    <section id="projects" className="mt-px bg-rest text-white overflow-clip">
       <h3 className="font-medium text-xl md:text-2xl xl:text-3xl text-center pt-10 pb-24 lg:pb-36 duration-500">
         Projects
       </h3>

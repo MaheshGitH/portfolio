@@ -1,5 +1,4 @@
 import React from "react";
-
 import FrontEnd from "./FrontEnd";
 import BackEnd from "./BackEnd";
 import DataBase from "./DataBase";
@@ -7,7 +6,7 @@ import OtherTools from "./OtherTools";
 
 const Skills = () => {
   return (
-    <section className="bg-rest text-white pr-1 lg:pr-0">
+    <section id="skills" className="bg-rest text-white pr-1 lg:pr-0">
       <h3 className="font-medium text-xl md:text-2xl xl:text-3xl text-center pt-10 mb-10 lg:mb-16 duration-500">
         Skills
       </h3>

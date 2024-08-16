@@ -4,7 +4,10 @@ import Form from "./Form";
 
 const Contact = () => {
   return (
-    <section className="mt-px bg-radial text-white overflow-clip flex flex-col items-center">
+    <section
+      id="contact"
+      className="mt-px bg-radial text-white overflow-clip flex flex-col items-center"
+    >
       <h3 className="font-medium text-xl md:text-2xl xl:text-3xl pt-10 pb-14 duration-500">
         Contact
       </h3>

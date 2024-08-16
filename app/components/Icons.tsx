@@ -2,10 +2,16 @@ import React from "react";
 
 export const ArmIcon = () => {
   return (
-    <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 29 29"
+      fill="inherit"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M8.75 9.7v10.61h5.1l.75-1.13a7.42 7.42 0 0 1 5.99-3.24c.66 0 1.22.11 1.65.31a2.52 2.52 0 0 1 1.51 2.18 4.23 4.23 0 0 1-1.88 3.7c-1.12.78-3.82 1.62-7.03 1.62-2.19 0-5.33-.39-8.44-2.13.36-3.06 1.1-8.02 2.35-11.92Zm0-5.95c-3.75 5.11-5 19.18-5 19.18a19.64 19.64 0 0 0 11.09 3.32c3.73 0 6.9-.99 8.46-2.05 3.75-2.55 4.13-8.31 0-10.22a6.57 6.57 0 0 0-2.71-.54 9.96 9.96 0 0 0-8.09 4.37h-1.25V8.86h2.5L15 5 8.75 3.75Z"
-        fill="#fff"
+        fill="inherit"
       />
     </svg>
   );
@@ -15,7 +21,7 @@ export const PersonIcon = () => {
   return (
     <svg
       width="100%"
-      viewBox="0 0 24 24"
+      viewBox="0 0 22 23"
       height="100%"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -29,7 +35,7 @@ export const MailIcon = () => {
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 24 24"
+      viewBox="0 0 23 23"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
