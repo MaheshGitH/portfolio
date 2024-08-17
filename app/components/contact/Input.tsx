@@ -52,6 +52,7 @@ const Input = ({ children, icon, name, success }: Props) => {
           {children}
         </motion.label>
         <input
+          autoComplete="off"
           id={name}
           type="text"
           ref={inputRef}

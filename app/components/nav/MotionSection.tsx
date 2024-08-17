@@ -18,7 +18,7 @@ const MotionSection = ({ duration, children, state, section, name }: Props) => {
         x: state ? 0 : -500,
       }}
       transition={{ duration: duration, type: "spring" }}
-      className="size-8 duration-300 2xl:ml-12 text-white text-2xl"
+      className="size-8 duration-300 2xl:ml-12 text-white text-2xl xl:font-bold"
     >
       <motion.span
         className="fixed"
