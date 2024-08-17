@@ -18,7 +18,7 @@ const MotionSection = ({ duration, children, state, section, name }: Props) => {
         x: state ? 0 : -500,
       }}
       exit={{ x: -500 }}
-      transition={{ duration: duration, type: "spring" }}
+      transition={{ duration: duration, ease: "easeIn" }}
       className="size-8 duration-300 2xl:ml-12 text-white text-2xl xl:font-bold"
     >
       <>

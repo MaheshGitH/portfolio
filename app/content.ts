@@ -10,28 +10,28 @@ export const brieJourney = {
 
   first: {
     monthYear: "NOV / 2022",
-    description: `"Started studying Python on YouTube because it was easy to understand. The straightforward syntax made it a great starting point for me."`,
+    description: `"Started studying <span class="text-white underline">Python on YouTube</span> because it was easy to understand. The straightforward syntax made it a great starting point for me."`,
   },
 
   second: {
     monthYear: "JAN / 2023",
-    description: `"I bought my first computer and continued learning Python. This allowed me to gain hands-on experience with programming languages."`,
+    description: `"I bought my first computer and <span class="text-white underline">continued learning Python</span>. This allowed me to gain hands-on experience with programming languages."`,
   },
   third: {
     monthYear: "APR / 2023",
-    description: `"I decided to study web development and started with HTML and CSS. It was the foundation for my journey into front-end development."`,
+    description: `"I decided to study <span class="text-white underline">web development</span> and started with <span class="text-white underline">HTML and CSS</span>. It was the foundation for my journey into front-end development."`,
   },
   fourth: {
     monthYear: "JUL / 2023",
-    description: `"I built my first website, 'Something I Like,' using plain HTML and CSS. After that, I continued learning JavaScript and React."`,
+    description: `"I built my first website, <span class="text-white underline">'Something I Like'</span>, using plain HTML and CSS. After that, I continued learning <span class="text-white underline">JavaScript and React</span>."`,
   },
   fifth: {
     monthYear: "JAN / 2024",
-    description: `"My first project in React was called 'YT-Stats,' using the YouTube API. After that, I continued learning Next.js."`,
+    description: `"My first project in React was called <span class="text-white underline">'YT-Stats'</span>, using the YouTube API. After that, I <span class="text-white underline">continued learning Next.js</span>."`,
   },
   sixth: {
     monthYear: "JUN / 2024",
-    description: `"I built a full-stack app called 'CirclChat' using Next.js, which supports real-time communication. After that, I continued exploring more technologies."`,
+    description: `"I built a full-stack app called <span class="text-white underline">'Circlchat'</span> using Next.js, which supports <span class="text-white underline">real-time communication</span>. After that, I continued exploring more technologies."`,
   },
 };
 

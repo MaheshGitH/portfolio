@@ -17,7 +17,7 @@ const Introduction = () => {
               <h1 className="font-semibold text-4xl md:text-5xl duration-500">
                 {introduction.name}
               </h1>
-              <h2 className="font-semibold text-xl relative md:text-2xl duration-500">
+              <h2 className="font-medium text-xl relative md:text-2xl duration-500">
                 I'm a S
                 <BsGearWideConnected className="size-3 inline-block animate-spin-slow text-black md:size-4" />
                 ftware eng
@@ -29,7 +29,7 @@ const Introduction = () => {
             <div className="size-40 bg-fuchsia-400 w-[200px] self-center max-lg:hidden mx-auto" />
           </div>
           <div className="size-40 lg:hidden bg-black"></div>
-          <p className="text-accent font-semibold mb-10 md:mb-36 duration-500 md:text-lg lg:text-xl max-w-3xl">
+          <p className="text-accent pr-1 mb-10 md:mb-36 duration-500 md:text-lg lg:text-xl max-w-3xl">
             {introduction.quote}
           </p>
         </div>

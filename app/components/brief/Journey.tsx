@@ -13,9 +13,10 @@ const Journey = ({ data }: Props) => {
       <p className="font-black mb-2 text-xl xl:text-2xl duration-500">
         {data.monthYear}
       </p>
-      <p className="text-accent text-[14px] xl:text-[16px] w-full md:max-w-md xl:max-w-lg">
-        {data.description}
-      </p>
+      <p
+        dangerouslySetInnerHTML={{ __html: data.description }}
+        className="text-accent text-[14px] xl:text-[16px] w-full md:max-w-md xl:max-w-lg"
+      />
     </div>
   );
 };
