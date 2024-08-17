@@ -16,7 +16,6 @@ const config: Config = {
         link: "#415A77",
       },
       borderColor: {
-        link: "#415A77",
         accent: "#CBCBCB",
       },
       stroke: {

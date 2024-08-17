@@ -41,7 +41,7 @@ export const projects = [
     techStack: ["HTML", "CSS"],
     projectOverview: `"This is my first website, built with plain HTML and CSS. It's not a real-world project, but this is where my journey as a web developer started. It is a single-page site."`,
     iconFolder: "front-end",
-    customHeight: "max-h-[850px]",
+    customHeight: "max-h-[900px] xl:h-[580px]",
     links: {
       website: "https://somethingilike.com",
     },
@@ -52,7 +52,7 @@ export const projects = [
     techStack: ["Typescript", "React"],
     projectOverview: `"This is a React app that displays the stats of a specific YouTube channel using the YouTube API. It is a single-page site where you can view channel information from YouTube."`,
     iconFolder: "front-end",
-    customHeight: "max-h-[850px]",
+    customHeight: "max-h-[900px] xl:h-[600px]",
     links: {
       website: "https://yt-stats.com",
       blog: "https://yt-stats.com/blog",
@@ -71,7 +71,7 @@ export const projects = [
     ],
     projectOverview: `"This project features real-time communication focused solely on group discussions. It is multi-paged, and users can invite others and sign in using Google, GitHub, or passwordless login."`,
     iconFolder: "circlchat",
-    customHeight: "max-h-[1000px]",
+    customHeight: "max-h-[1000px] xl:h-[660px]",
     links: {
       website: "https://circlchat.com",
       blog: "https://circlchat.com/blog",

@@ -37,8 +37,6 @@ const Tost = ({ success }: Props) => {
       animate={{ opacity: close ? 0 : 1, x: close ? 300 : 0 }}
       exit={{ opacity: 0, x: 300 }}
       transition={{ duration: 0.5 }}
-      role="status"
-      aria-live="polite"
       className="fixed w-72 h-12 flex items-center justify-between gap-3 bg-brief text-white rounded-lg right-4 bottom-36 shadow-lg p-3"
     >
       <div className="flex items-center gap-4">

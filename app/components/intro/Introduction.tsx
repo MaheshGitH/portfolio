@@ -26,9 +26,9 @@ const Introduction = () => {
               </h2>
               <SocialIcons />
             </div>
-            {/* <div className="h-40 bg-fuchsia-400 w-[200px] self-center max-lg:hidden mx-auto" /> */}
+            <div className="size-40 bg-fuchsia-400 w-[200px] self-center max-lg:hidden mx-auto" />
           </div>
-          {/* <div className="h-40 lg:hidden bg-black"></div> */}
+          <div className="size-40 lg:hidden bg-black"></div>
           <p className="text-accent font-semibold mb-10 md:mb-36 duration-500 md:text-lg lg:text-xl max-w-3xl">
             {introduction.quote}
           </p>

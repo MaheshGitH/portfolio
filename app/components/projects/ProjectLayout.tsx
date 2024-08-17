@@ -23,7 +23,7 @@ interface Props {
 const ProjectLayout = ({ project }: Props) => {
   return (
     <div
-      className={`flex ${project.customHeight} xl:h-[550px] duration-500 overflow-y-clip`}
+      className={`flex ${project.customHeight} duration-500 overflow-y-clip`}
     >
       <AnimatedRive />
 
@@ -50,7 +50,10 @@ const ProjectLayout = ({ project }: Props) => {
 
             <ProjectOverview projectOverview={project.projectOverview} />
 
-            <Link websiteName={project.links.website} />
+            <Link
+              websiteName={project.links.website}
+              blog={project.links.blog}
+            />
           </div>
           <IFrame />
         </div>

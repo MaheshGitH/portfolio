@@ -3,7 +3,6 @@
 import { useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { useRive } from "rive-react";
-import { brieJourney, projects } from "../../content";
 
 const AnimatedRive = () => {
   const spanRef = useRef<HTMLSpanElement>(null);

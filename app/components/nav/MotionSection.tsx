@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React, { ReactNode } from "react";
 
 interface Props {
@@ -17,25 +17,41 @@ const MotionSection = ({ duration, children, state, section, name }: Props) => {
       animate={{
         x: state ? 0 : -500,
       }}
+      exit={{ x: -500 }}
       transition={{ duration: duration, type: "spring" }}
       className="size-8 duration-300 2xl:ml-12 text-white text-2xl xl:font-bold"
     >
-      <motion.span
-        className="fixed"
-        initial={{ x: 0 }}
-        animate={{ x: name ? 20 : -100 }}
-        transition={{ duration: 1, ease: "backOut" }}
-      >
-        {name ? name : ""}
-      </motion.span>
-      <motion.span
-        className=" fixed"
-        initial={{ x: 100 }}
-        animate={{ x: name ? -100 : 0 }}
-        transition={{ duration: 2, type: "spring" }}
-      >
-        {name ? "" : children}
-      </motion.span>
+      <>
+        <AnimatePresence>
+          {name && (
+            <motion.span
+              key="nameSpan"
+              className="fixed"
+              initial={{ x: 0, opacity: 0 }}
+              animate={{ x: 20, opacity: 1 }}
+              exit={{ x: 10, opacity: 0 }}
+              transition={{ duration: 1.5, ease: "backOut" }}
+            >
+              {name}
+            </motion.span>
+          )}
+        </AnimatePresence>
+
+        <AnimatePresence>
+          {!name && (
+            <motion.span
+              key="childrenSpan"
+              className="fixed"
+              initial={{ x: 0, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 0, opacity: 0 }}
+              transition={{ duration: 0.8, type: "spring" }}
+            >
+              {children}
+            </motion.span>
+          )}
+        </AnimatePresence>
+      </>
     </motion.a>
   );
 };
