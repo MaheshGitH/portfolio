@@ -9,29 +9,29 @@ export const brieJourney = {
   heading: "A Brief Journey of Mine",
 
   first: {
-    monthYear: "MAY / 2019",
-    description: `"During the summer, I started exploring what the IT industry is all about, but didn't know where, when, or how to start."`,
+    monthYear: "NOV / 2022",
+    description: `"Started studying Python on YouTube because it was easy to understand. The straightforward syntax made it a great starting point for me."`,
   },
 
   second: {
-    monthYear: "MAY / 2020",
-    description: `"This is when I stumbled upon Python, so I started my programming journey with it because it was easy to understand."`,
+    monthYear: "JAN / 2023",
+    description: `"I bought my first computer and continued learning Python. This allowed me to gain hands-on experience with programming languages."`,
   },
   third: {
-    monthYear: "DEC / 2021",
-    description: `"I started to analyze what best suited me in the IT industry and decided to become a web developer."`,
+    monthYear: "APR / 2023",
+    description: `"I decided to study web development and started with HTML and CSS. It was the foundation for my journey into front-end development."`,
   },
   fourth: {
-    monthYear: "JAN / 2022",
-    description: `"I bought my first computer and started learning about web technologies: HTML, CSS, and JavaScript."`,
+    monthYear: "JUL / 2023",
+    description: `"I built my first website, 'Something I Like,' using plain HTML and CSS. After that, I continued learning JavaScript and React."`,
   },
   fifth: {
-    monthYear: "AUG / 2022",
-    description: `"After completing my studies of web technologies like HTML, CSS, and JavaScript, I started learning React and TypeScript."`,
+    monthYear: "JAN / 2024",
+    description: `"My first project in React was called 'YT-Stats,' using the YouTube API. After that, I continued learning Next.js."`,
   },
   sixth: {
-    monthYear: "JAN / 2023",
-    description: `"I built my first React app, 'Something I Like,' and then continued learning Next.js."`,
+    monthYear: "JUN / 2024",
+    description: `"I built a full-stack app called 'CirclChat' using Next.js, which supports real-time communication. After that, I continued exploring more technologies."`,
   },
 };
 
