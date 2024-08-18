@@ -3,7 +3,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const FrontEnd = () => {
   return (
-    <div>
+    <article>
       <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
         Front-end
       </p>
@@ -31,7 +31,7 @@ const FrontEnd = () => {
           to={80}
         />
       </div>
-    </div>
+    </article>
   );
 };
 

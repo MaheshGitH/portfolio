@@ -13,11 +13,11 @@ const FirstPart = () => {
         <AnimatedRive />
         <AnimatedRive />
       </div>
-      <div className="flex flex-col xl:gap-5">
+      <section className="flex flex-col xl:gap-5">
         <Journey data={brieJourney.first} />
         <Journey data={brieJourney.second} />
         <Journey data={brieJourney.third} />
-      </div>
+      </section>
     </div>
   );
 };

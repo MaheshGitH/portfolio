@@ -3,7 +3,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const DataBase = () => {
   return (
-    <div>
+    <article>
       <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
         Database
       </p>
@@ -25,7 +25,7 @@ const DataBase = () => {
           to={60}
         />
       </div>
-    </div>
+    </article>
   );
 };
 

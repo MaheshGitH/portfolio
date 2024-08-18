@@ -13,12 +13,12 @@ const Skills = () => {
       <h4 className="font-medium text-lg text-center mb-11 md:text-xl xl:text-2xl">
         Front-end&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Back-end&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Database
       </h4>
-      <div className="pl-4 ml-0 lg:ml-52 xl:ml-80 duration-500 flex flex-col gap-20 pb-20">
+      <section className="pl-4 ml-0 lg:ml-52 xl:ml-80 duration-500 flex flex-col gap-20 pb-20">
         <FrontEnd />
         <BackEnd />
         <DataBase />
         <OtherTools />
-      </div>
+      </section>
     </section>
   );
 };

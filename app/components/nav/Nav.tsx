@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { TbWorld } from "react-icons/tb";
-import { ArmIcon, MailIcon, PersonIcon } from "../Icons";
-import { FaChevronUp } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import MotionSection from "./MotionSection";
+import React, { useEffect, useRef, useState } from "react";
+import { FaChevronUp } from "react-icons/fa6";
+import { TbWorld } from "react-icons/tb";
 import { useMediaQuery } from "usehooks-ts";
+import { ArmIcon, MailIcon, PersonIcon } from "../Icons";
 import getAllIntersector from "./getAllIntersector";
+import MotionSection from "./MotionSection";
 
 const Nav = () => {
   const [state, setState] = useState(false);
@@ -51,7 +51,7 @@ const Nav = () => {
   const currentSection = getAllIntersector();
 
   return (
-    <>
+    <nav>
       <motion.div
         onClick={() => {
           if (matches) return;
@@ -118,7 +118,7 @@ const Nav = () => {
       >
         <FaChevronUp className="size-5 text-white" />
       </span>
-    </>
+    </nav>
   );
 };
 

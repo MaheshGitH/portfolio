@@ -4,7 +4,7 @@ import Form from "./Form";
 
 const Contact = () => {
   return (
-    <section
+    <footer
       id="contact"
       className="mt-px bg-radial text-white overflow-clip flex flex-col items-center"
     >
@@ -18,7 +18,7 @@ const Contact = () => {
       </p>
       <Form />
       <Wave />
-    </section>
+    </footer>
   );
 };
 
