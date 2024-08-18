@@ -3,7 +3,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const OtherTools = () => {
   return (
-    <div>
+    <article>
       <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
         Other Tools I'm Familiar With
       </p>
@@ -26,7 +26,7 @@ const OtherTools = () => {
           to={90}
         />
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -22,7 +22,7 @@ interface Props {
 
 const ProjectLayout = ({ project }: Props) => {
   return (
-    <div
+    <article
       className={`flex ${project.customHeight} duration-500 overflow-y-clip`}
     >
       <AnimatedRive />
@@ -59,7 +59,7 @@ const ProjectLayout = ({ project }: Props) => {
         </div>
         <Line />
       </div>
-    </div>
+    </article>
   );
 };
 

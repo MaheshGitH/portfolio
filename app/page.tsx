@@ -10,13 +10,16 @@ import {
 
 export default function Page() {
   return (
-    <main>
+    <>
       <Nav />
-      <Introduction />
-      <BriefJourney />
-      <Skills />
-      <Projects />
-      <Contact />
-    </main>
+
+      <main>
+        <Introduction />
+        <BriefJourney />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   );
 }

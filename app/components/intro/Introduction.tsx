@@ -8,10 +8,10 @@ import Link from "next/link";
 
 const Introduction = () => {
   return (
-    <section id="introduction" className="bg-intro text-white pt-6 pl-5">
+    <header id="introduction" className="bg-intro text-white pt-6 pl-5">
       <div className="max-w-[1700px] w-full mx-auto flex flex-col gap-0 lg:gap-20 duration-500">
         <Logo />
-        <div className="pt-6 pl-5 flex flex-col gap-10 lg:gap-40 ml-0 lg:ml-48 xl:ml-56 duration-500">
+        <article className="pt-6 pl-5 flex flex-col gap-10 lg:gap-40 ml-0 lg:ml-48 xl:ml-56 duration-500">
           <div className="flex items-center">
             <div className=" flex flex-col gap-5 md:gap-10 duration-500 mt-10">
               <h1 className="font-semibold text-4xl md:text-5xl duration-500">
@@ -32,9 +32,9 @@ const Introduction = () => {
           <p className="text-accent pr-1 mb-10 md:mb-36 duration-500 md:text-lg lg:text-xl max-w-3xl">
             {introduction.quote}
           </p>
-        </div>
+        </article>
       </div>
-    </section>
+    </header>
   );
 };
 

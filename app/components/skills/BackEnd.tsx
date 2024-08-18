@@ -3,7 +3,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const BackEnd = () => {
   return (
-    <div>
+    <article>
       <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
         Back-end
       </p>
@@ -27,7 +27,7 @@ const BackEnd = () => {
           to={20}
         />
       </div>
-    </div>
+    </article>
   );
 };
 
