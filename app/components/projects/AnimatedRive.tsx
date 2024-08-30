@@ -7,7 +7,7 @@ import { useRive } from "rive-react";
 const AnimatedRive = () => {
   const spanRef = useRef<HTMLSpanElement>(null);
 
-  const inView = useInView(spanRef, { once: true, amount: 0.4 });
+  const inView = useInView(spanRef, { once: true, amount: 0.25 });
 
   const { rive, RiveComponent } = useRive({
     src: "/riveForProject.riv",
@@ -24,8 +24,8 @@ const AnimatedRive = () => {
 
   return (
     <>
-      <span className="w-14 inline-block h-full ml-2" ref={spanRef}>
-        <RiveComponent className="w-5 h-[1000px] mx-auto" />
+      <span className="w-[20px] inline-block" ref={spanRef}>
+        <RiveComponent className="w-full h-[2000px]" />
       </span>
     </>
   );

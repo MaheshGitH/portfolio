@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <footer
       id="contact"
-      className="mt-px bg-radial text-white overflow-clip flex flex-col items-center"
+      className="mt-px bg-radial text-white flex flex-col items-center"
     >
       <h3 className="font-medium text-xl md:text-2xl xl:text-3xl pt-10 pb-14 duration-500">
         Contact

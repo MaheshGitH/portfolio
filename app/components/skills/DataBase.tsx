@@ -1,13 +1,11 @@
 import React from "react";
 import AnimatedCounter from "./AnimatedCounter";
+import SkillLayout from "./SkillLayout";
 
 const DataBase = () => {
   return (
     <article>
-      <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
-        Database
-      </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-x-5 gap-y-9">
+      <SkillLayout title="Database">
         <AnimatedCounter
           iconUri="/database/firebase.svg"
           toolName="Firebase"
@@ -18,13 +16,7 @@ const DataBase = () => {
           toolName="MongoDB"
           to={85}
         />
-        <AnimatedCounter
-          customSize="h-7 w-11"
-          iconUri="/database/mysql.svg"
-          toolName="MySQL"
-          to={60}
-        />
-      </div>
+      </SkillLayout>
     </article>
   );
 };

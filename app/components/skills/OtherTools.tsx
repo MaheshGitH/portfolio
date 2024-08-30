@@ -1,13 +1,11 @@
 import React from "react";
 import AnimatedCounter from "./AnimatedCounter";
+import SkillLayout from "./SkillLayout";
 
 const OtherTools = () => {
   return (
     <article>
-      <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
-        Other Tools I'm Familiar With
-      </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-x-5 gap-y-9">
+      <SkillLayout title="Other Tools I'm Familiar With">
         <AnimatedCounter
           customSize="h-8 w-[30px]"
           iconUri="/othertools/auth.svg"
@@ -25,7 +23,7 @@ const OtherTools = () => {
           toolName="Socket io"
           to={90}
         />
-      </div>
+      </SkillLayout>
     </article>
   );
 };

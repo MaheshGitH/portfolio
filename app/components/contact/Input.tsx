@@ -19,7 +19,7 @@ const Input = ({ children, icon, name, success }: Props) => {
   }, [inputRef, success]);
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 w-full">
       <span
         onClick={() => inputRef.current.focus()}
         className={`size-8 inline-block duration-500  ${

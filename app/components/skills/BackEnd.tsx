@@ -1,14 +1,11 @@
 import React from "react";
 import AnimatedCounter from "./AnimatedCounter";
+import SkillLayout from "./SkillLayout";
 
 const BackEnd = () => {
   return (
     <article>
-      <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
-        Back-end
-      </p>
-      <div className="grid w grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-x-5 gap-y-9">
-        <AnimatedCounter iconUri="/back-end/node.svg" toolName="Node" to={85} />
+      <SkillLayout title="Back-end">
         <AnimatedCounter
           iconUri="/back-end/next.svg"
           toolName="Next js"
@@ -26,7 +23,7 @@ const BackEnd = () => {
           toolName="Nginx"
           to={20}
         />
-      </div>
+      </SkillLayout>
     </article>
   );
 };

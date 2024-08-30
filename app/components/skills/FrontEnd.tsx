@@ -1,13 +1,11 @@
 import React from "react";
 import AnimatedCounter from "./AnimatedCounter";
+import SkillLayout from "./SkillLayout";
 
 const FrontEnd = () => {
   return (
     <article>
-      <p className="font-semibold text-xl mb-10 lg:text-2xl duration-500">
-        Front-end
-      </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-x-5 gap-y-9">
+      <SkillLayout title="Front-end">
         <AnimatedCounter
           iconUri="/front-end/figma.svg"
           toolName="Figma"
@@ -30,7 +28,7 @@ const FrontEnd = () => {
           toolName="React"
           to={80}
         />
-      </div>
+      </SkillLayout>
     </article>
   );
 };

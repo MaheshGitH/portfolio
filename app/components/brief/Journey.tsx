@@ -9,7 +9,7 @@ interface Props {
 
 const Journey = ({ data }: Props) => {
   return (
-    <article className="flex flex-col h-[120px] gap-2">
+    <article className="flex flex-col h-[120px] pr-3 gap-2">
       <p className="font-black mb-2 text-xl xl:text-2xl duration-500">
         {data.monthYear}
       </p>

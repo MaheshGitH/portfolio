@@ -10,28 +10,28 @@ export const brieJourney = {
 
   first: {
     monthYear: "NOV / 2022",
-    description: `"Started studying <span class="text-white underline">Python on YouTube</span> because it was easy to understand. The straightforward syntax made it a great starting point for me."`,
+    description: `"Watching a tutorial on YouTube about <span class="text-white underline">Python.</span>"`,
   },
 
   second: {
     monthYear: "JAN / 2023",
-    description: `"I bought my first computer and <span class="text-white underline">continued learning Python</span>. This allowed me to gain hands-on experience with programming languages."`,
+    description: `"Bought a computer and <span class="text-white underline">continued learning Python</span>."`,
   },
   third: {
     monthYear: "APR / 2023",
-    description: `"I decided to study <span class="text-white underline">web development</span> and started with <span class="text-white underline">HTML and CSS</span>. It was the foundation for my journey into front-end development."`,
+    description: `"Decided to study <span class="text-white underline">web development</span> and started with <span class="text-white underline">HTML and CSS</span>."`,
   },
   fourth: {
     monthYear: "JUL / 2023",
-    description: `"I built my first website, <span class="text-white underline">'Something I Like'</span>, using plain HTML and CSS. After that, I continued learning <span class="text-white underline">JavaScript and React</span>."`,
+    description: `"Built a dummy website using HTML and CSS, then continued learning.<span class="text-white underline"> JavaScript and React</span>"`,
   },
   fifth: {
     monthYear: "JAN / 2024",
-    description: `"My first project in React was called <span class="text-white underline">'YT-Stats'</span>, using the YouTube API. After that, I <span class="text-white underline">continued learning Next.js</span>."`,
+    description: `"Built a React app called <span class="text-white underline">'YT-Stats'</span> and then continued learning Next.js."`,
   },
   sixth: {
     monthYear: "JUN / 2024",
-    description: `"I built a full-stack app called <span class="text-white underline">'Circlchat'</span> using Next.js, which supports <span class="text-white underline">real-time communication</span>. After that, I continued exploring more technologies."`,
+    description: `"Built a Next.js app called <span class="text-white underline">'Circlchat'</span> and then continued to learn other technologies."`,
   },
 };
 
@@ -41,9 +41,9 @@ export const projects = [
     techStack: ["HTML", "CSS"],
     projectOverview: `"This is my first website, built with plain HTML and CSS. It's not a real-world project, but this is where my journey as a web developer started. It is a single-page site."`,
     iconFolder: "front-end",
-    customHeight: "max-h-[900px] xl:h-[580px]",
+
     links: {
-      website: "https://somethingilike.com",
+      website: "Not yet",
     },
   },
 
@@ -52,10 +52,10 @@ export const projects = [
     techStack: ["Typescript", "React"],
     projectOverview: `"This is a React app that displays the stats of a specific YouTube channel using the YouTube API. It is a single-page site where you can view channel information from YouTube."`,
     iconFolder: "front-end",
-    customHeight: "max-h-[900px] xl:h-[600px]",
+
     links: {
-      website: "https://yt-stats.com",
-      blog: "https://yt-stats.com/blog",
+      website: "https://yt-stats.netlify.app",
+      blog: "https://yt-stats.netlify/blog",
     },
   },
 
@@ -71,10 +71,10 @@ export const projects = [
     ],
     projectOverview: `"This project features real-time communication focused solely on group discussions. It is multi-paged, and users can invite others and sign in using Google, GitHub, or passwordless login."`,
     iconFolder: "circlchat",
-    customHeight: "max-h-[1000px] xl:h-[660px]",
+
     links: {
-      website: "https://circlchat.com",
-      blog: "https://circlchat.com/blog",
+      website: "Not yet",
+      blog: "Not yet",
     },
   },
 ];

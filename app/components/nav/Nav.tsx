@@ -62,13 +62,13 @@ const Nav = () => {
           backgroundColor: state ? "rgb(0 0 0 / 0.2)" : "rgb(0 0 0 / 0)",
         }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`flex items-center h-dvh fixed max-lg:inset-0  backdrop-blur-0 ${
-          zIndex ? " z-20 backdrop-blur-sm " : " -z-20 "
+        className={`flex items-center fixed max-lg:inset-0 lg:top-0 lg:bottom-0 ${
+          zIndex ? " z-20 backdrop-blur-sm " : " -z-20 backdrop-blur-0"
         } duration-100 `}
       >
         <div
           ref={divRef}
-          className={`stroke-white fill-white fixed mt-12 pl-10 h-[calc(100dvh-200px)] flex flex-col justify-between
+          className={`stroke-white fill-white fixed top-28 bottom-20 pl-10 flex flex-col justify-between
         ${state ? " left-0 " : " -left-24 "}
          duration-300 lg:left-0`}
         >

@@ -41,7 +41,7 @@ const MotionSection = ({ duration, children, state, section, name }: Props) => {
           {!name && (
             <motion.span
               key="childrenSpan"
-              className="fixed"
+              className="fixed size-8"
               initial={{ x: 0, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 0, opacity: 0 }}

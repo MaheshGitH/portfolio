@@ -10,11 +10,11 @@ const Send = () => {
     <button
       type="submit"
       className={`flex items-center justify-between gap-10 self-end px-4 focus:outline-none rounded-xl duration-500 border ${
-        pending ? " w-16 h-10 px-10 " : " w-36 h-10 "
-      } text-accent border-accent stroke-accent hover:text-white hover:border-white hover:stroke-white`}
+        pending ? " w-28 h-10 " : " w-36 h-10 "
+      } text-accent bg-transparent border-accent stroke-accent hover:text-white hover:border-white hover:stroke-white`}
     >
       {pending ? (
-        <span className="loader block size-2" />
+        <span className="loader block size-2 mx-auto" />
       ) : (
         <motion.span
           initial={{ opacity: 0 }}
