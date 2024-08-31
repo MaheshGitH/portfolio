@@ -55,7 +55,7 @@ export const projects = [
 
     links: {
       website: "https://yt-stats.netlify.app",
-      blog: "https://yt-stats.netlify/blog",
+      blog: "Not yet",
     },
   },
 

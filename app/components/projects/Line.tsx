@@ -12,7 +12,7 @@ const Line = () => {
       ref={spanRef}
       className={`h-0.5 delay-1000 duration-500 ${
         inView ? " w-full " : " w-0 "
-      } bg-brief inline-block my-6`}
+      } bg-brief inline-block mb-6`}
     ></span>
   );
 };

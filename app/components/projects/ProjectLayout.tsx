@@ -27,7 +27,7 @@ const ProjectLayout = ({ project }: Props) => {
         <AnimatedRive />
       </div>
 
-      <div className="flex flex-col ml-10 md:pr-5">
+      <div className="flex flex-col ml-10 gap-10 md:pr-5">
         <div className="flex flex-col gap-10">
           <p className="font-semibold text-xl md:text-[22px] lg:text-2xl duration-500">
             {project.name}
@@ -49,7 +49,7 @@ const ProjectLayout = ({ project }: Props) => {
 
           <ProjectOverview projectOverview={project.projectOverview} />
 
-          <Link websiteName={project.links.website} blog={project.links.blog} />
+          <Link website={project.links.website} blog={project.links.blog} />
         </div>
         <IFrame websiteLink={project.links.website} />
 

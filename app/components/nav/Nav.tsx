@@ -107,7 +107,7 @@ const Nav = () => {
         </div>
       </motion.div>
       <span
-        className={`fixed bottom-40 lg:hidden cursor-pointer ${
+        className={`fixed bottom-40 lg:hidden cursor-pointer z-10 ${
           state ? " left-5 " : " left-1 rotate-90 "
         } duration-500`}
         onClick={() => {
