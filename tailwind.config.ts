@@ -7,22 +7,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        stylish: "var(--font-stylish)",
+        "josefin-sans": "var(--font-josefin-sans)",
+      },
       backgroundColor: {
-        intro: "#415A77",
-        rest: "#0D1B2A",
+        primary: "#5615A5",
+        "primary-light": "#EDE6F4",
+        dark: "#0B0A0D",
+        light: "#EEEDEF",
+        gradient:
+          "linear-gradient(98.33deg, #231848 -53.48%, #0C1A1D 72.82%, #11282D 133.89%)",
       },
       textColor: {
-        accent: "#CBCBCB",
-        link: "#415A77",
+        primary: "#5615A5",
+        secondary: "#32B621",
       },
       borderColor: {
-        accent: "#CBCBCB",
-      },
-      stroke: {
-        accent: "#cbcbcb",
-      },
-      animation: {
-        "spin-slow": "spin 3s linear infinite",
+        primary: "#5615A5",
       },
     },
   },

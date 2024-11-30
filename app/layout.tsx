@@ -1,7 +1,7 @@
 import React from "react";
 import "./globals.css";
 import { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Josefin_Sans, Stylish } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Mahesh's portfolio",
@@ -10,9 +10,16 @@ export const metadata: Metadata = {
     "Welcome to my portfolio! Explore my projects, skills, and experience in web development. I'm currently on the journey to becoming a software engineer. Discover my progress and the work I'm passionate about.",
 };
 
-const roboto = Roboto({
+const stylish = Stylish({
   subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+  variable: "--font-stylish",
+  weight: "400",
+});
+
+const josefin_sans = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin-sans",
+  weight: "400",
 });
 
 export default function RootLayout({
@@ -21,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={stylish.variable + " " + josefin_sans.variable}>
       <body>{children}</body>
     </html>
   );
