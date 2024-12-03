@@ -13,6 +13,7 @@ const config: Config = {
       },
       backgroundColor: {
         primary: "#5615A5",
+        secondary: "#32B621",
         "primary-light": "#EDE6F4",
         dark: "#0B0A0D",
         light: "#EEEDEF",
@@ -25,9 +26,11 @@ const config: Config = {
       },
       borderColor: {
         primary: "#5615A5",
+        secondary: "#32B621",
       },
     },
   },
+  darkMode: "selector",
   plugins: [],
 };
 export default config;

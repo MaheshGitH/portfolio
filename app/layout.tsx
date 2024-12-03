@@ -2,6 +2,7 @@ import React from "react";
 import "./globals.css";
 import { Metadata } from "next";
 import { Josefin_Sans, Stylish } from "next/font/google";
+import TopSection from "./components/TopSection";
 
 export const metadata: Metadata = {
   title: "Mahesh's portfolio",
@@ -29,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={stylish.variable + " " + josefin_sans.variable}>
-      <body>{children}</body>
+      <body className="dark max-w-7xl mx-auto dark:text-white dark:bg-dark bg-light">
+        <TopSection></TopSection>
+        {children}
+      </body>
     </html>
   );
 }
