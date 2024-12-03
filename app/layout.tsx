@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={stylish.variable + " " + josefin_sans.variable}>
-      <body className="dark max-w-7xl mx-auto dark:text-white dark:bg-dark bg-light">
+      <body className="dark max-w-7xl mx-auto dark:text-white dark:bg-dark bg-light font-josefin-sans text-xl">
         <TopSection></TopSection>
         {children}
       </body>

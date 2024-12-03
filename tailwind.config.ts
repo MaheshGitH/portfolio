@@ -17,8 +17,11 @@ const config: Config = {
         "primary-light": "#EDE6F4",
         dark: "#0B0A0D",
         light: "#EEEDEF",
+      },
+      backgroundImage: {
         gradient:
           "linear-gradient(98.33deg, #231848 -53.48%, #0C1A1D 72.82%, #11282D 133.89%)",
+        gradientLight: "linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%)",
       },
       textColor: {
         primary: "#5615A5",
