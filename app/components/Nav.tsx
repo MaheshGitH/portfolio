@@ -1,7 +1,13 @@
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const Nav = () => {
-  const menuItems = ["Home", "Skills", "Projects", "Contact"];
+  const menuItems = [
+    { name: "Home", href: "/" },
+    { name: "Skills", href: "/skills" },
+    { name: "Projects", href: "/projects" },
+    { name: "contact", href: "/contact" },
+  ];
   const liRef = useRef<HTMLLIElement>(null);
   const [selectedPage, setSelectedPage] = useState<string>("Home");
 
@@ -21,16 +27,16 @@ const Nav = () => {
     }
   }, []);
 
-  const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const target = e.currentTarget.getBoundingClientRect();
     setUnderlineStyle({
       width: target.width,
       left: target.left,
-      top: target.top + 44,
+      top: target.top + 36,
     });
   };
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     setSelectedPage(e.currentTarget.textContent);
   };
 
@@ -39,9 +45,12 @@ const Nav = () => {
       <ul className="flex max-md:absolute -bottom-10 right-1/2 max-md:translate-x-1/2">
         {menuItems.map((item, index) => (
           <li ref={index === 0 ? liRef : null} key={index}>
-            <button
+            <Link
+              href={item.href}
               className={`px-4 py-2 border-b-2  ${
-                selectedPage === item ? " border-secondary " : " border-none "
+                selectedPage === item.name
+                  ? " border-secondary "
+                  : " border-none "
               }`}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={() =>
@@ -53,8 +62,8 @@ const Nav = () => {
               }
               onClick={handleClick}
             >
-              {item}
-            </button>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>

@@ -8,7 +8,7 @@ const BottomSection = () => {
     <div>
       <h1 className="text-center mt-2">
         Hi, I'm &nbsp;
-        <span className="font-stylish bg-gradientLight dark:bg-gradient dark:text-white rounded-lg py-2 px-6 ">
+        <span className="font-stylish bg-gradientLight dark:bg-gradient dark:text-white rounded-lg py-2 px-4 ">
           Mahesh krishnan
         </span>
         &nbsp; , a software developer who turns complex problems into simple,
