@@ -1,8 +1,8 @@
 import React from "react";
-import Project from "./components/Project";
-import { projects } from "./components/content";
+import Project from "./Project";
+import { projects } from "./content";
 
-const page = () => {
+const ProjectSection = () => {
   return (
     <div className="mt-48 mb-16 px-4 flex flex-col gap-52">
       {projects.map((project, index) => (
@@ -20,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProjectSection;

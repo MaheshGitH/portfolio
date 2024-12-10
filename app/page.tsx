@@ -1,15 +1,16 @@
 import React from "react";
-import Background from "./components/Background";
-import Picture from "./components/Picture";
-
-import BottomSection from "./components/BottomSection";
+import HomeSection from "./components/homesection/HomeSection";
+import SkillSection from "./components/skillssection/SkillSection";
+import ProjectSection from "./components/projectsection/ProjectSection";
+import ContactSection from "./components/contactsection/ContactSection";
 
 export default function Page() {
   return (
-    <main className="relative">
-      <Background />
-      <Picture />
-      <BottomSection />
-    </main>
+    <>
+      <HomeSection />
+      <SkillSection />
+      <ProjectSection />
+      <ContactSection />
+    </>
   );
 }

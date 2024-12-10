@@ -1,9 +1,9 @@
 import React from "react";
-import Details from "./components/Details";
-import Links from "./components/Links";
-import Contact from "./components/Contact";
+import Contact from "./Contact";
+import Details from "./Details";
+import Links from "./Links";
 
-const page = () => {
+const ContactSection = () => {
   return (
     <div className="flex flex-col gap-8 mt-32 ml-4">
       <Details />
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactSection;

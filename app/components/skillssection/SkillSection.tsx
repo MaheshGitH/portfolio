@@ -10,10 +10,10 @@ import {
   Mongodb,
   Firebase,
   MySQL,
-} from "./components/SkillIcons";
-import SkillLayout from "./components/SkillLayout";
+} from "./SkillIcons";
+import SkillLayout from "./SkillLayout";
 
-const page = () => {
+const SkillSection = () => {
   return (
     <div className="flex flex-col gap-16 mt-48 mb-16 px-4">
       <SkillLayout icon={<Figma />} name="Figma" limit={50} />
@@ -30,4 +30,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SkillSection;
