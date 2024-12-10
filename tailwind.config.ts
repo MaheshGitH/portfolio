@@ -27,6 +27,7 @@ const config: Config = {
       textColor: {
         primary: "#5615A5",
         secondary: "#32B621",
+        "primary-light": "#EDE6F4",
       },
       borderColor: {
         primary: "#5615A5",
