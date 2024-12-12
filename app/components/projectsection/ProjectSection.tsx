@@ -4,7 +4,7 @@ import { projects } from "./content";
 
 const ProjectSection = () => {
   return (
-    <div className="mt-48 mb-16 px-4 flex flex-col gap-52">
+    <div className="flex flex-col gap-52">
       {projects.map((project, index) => (
         <Project
           key={index}
