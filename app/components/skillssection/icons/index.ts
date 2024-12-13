@@ -27,3 +27,23 @@ export { FaReact as ReactIcon };
 import { NextjsIcon } from "./NextjsIcon";
 
 export { NextjsIcon };
+
+// MongoDB icon
+import MongoIcon from "./MongoIconColor";
+
+export { MongoIcon };
+
+// Firebase icon
+import { IoLogoFirebase } from "react-icons/io5";
+
+export { IoLogoFirebase as FirebaseIcon };
+
+// Prisma icon
+import { SiPrisma } from "react-icons/si";
+
+export { SiPrisma as PrismaIcon };
+
+// Socket io icon
+import { SiSocketdotio } from "react-icons/si";
+
+export { SiSocketdotio as SocketIoIcon };

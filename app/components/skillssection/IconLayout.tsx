@@ -3,7 +3,7 @@
 import { ReactNode, useRef } from "react";
 
 interface Props {
-  hover: string;
+  hover?: string;
   children: ReactNode;
   name: string;
 }
