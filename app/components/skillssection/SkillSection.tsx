@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../Title";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import DevOpsDeployment from "./DevOpsDeployment";
 
 const SkillSection = () => {
   return (
@@ -9,6 +10,7 @@ const SkillSection = () => {
       <Title>Tools I'm Familiar With</Title>
       <Frontend />
       <Backend />
+      <DevOpsDeployment />
     </div>
   );
 };

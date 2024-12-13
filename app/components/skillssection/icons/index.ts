@@ -47,3 +47,8 @@ export { SiPrisma as PrismaIcon };
 import { SiSocketdotio } from "react-icons/si";
 
 export { SiSocketdotio as SocketIoIcon };
+
+// Docker icon
+import { FaDocker } from "react-icons/fa";
+
+export { FaDocker as DockerIcon };
