@@ -1,10 +1,14 @@
 import React from "react";
 import Project from "./Project";
 import { projects } from "./content";
+import Title from "../Title";
 
 const ProjectSection = () => {
   return (
     <div className="flex flex-col gap-52">
+      <span className="-mb-28">
+        <Title>Projects</Title>
+      </span>
       {projects.map((project, index) => (
         <Project
           key={index}

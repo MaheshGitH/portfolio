@@ -2,10 +2,14 @@ import React from "react";
 import Contact from "./Contact";
 import Details from "./Details";
 import Links from "./Links";
+import Title from "../Title";
 
 const ContactSection = () => {
   return (
     <div className="flex flex-col gap-8">
+      <span className="mb-8">
+        <Title>Contact</Title>
+      </span>
       <Details />
       <Links />
       <div>
