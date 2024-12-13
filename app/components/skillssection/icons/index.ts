@@ -52,3 +52,8 @@ export { SiSocketdotio as SocketIoIcon };
 import { FaDocker } from "react-icons/fa";
 
 export { FaDocker as DockerIcon };
+
+// Auth icon
+import AuthIcon from "./AuthIcon";
+
+export { AuthIcon };

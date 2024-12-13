@@ -13,17 +13,17 @@ const Backend = () => {
           <MongoIcon />
         </IconLayout>
         <IconLayout name="Firebase" hover="hover:text-yellow-500">
-          <FirebaseIcon className="size-9" />
+          <FirebaseIcon className="size-8" />
         </IconLayout>
       </div>
       <div>
         <div className="flex flex-wrap items-center gap-8">
           Libraries:
           <IconLayout name="Prisma">
-            <PrismaIcon className="size-9" />
+            <PrismaIcon className="size-7" />
           </IconLayout>
           <IconLayout name="Socket io">
-            <SocketIoIcon className="size-9" />
+            <SocketIoIcon className="size-7" />
           </IconLayout>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Title from "../Title";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
 import DevOpsDeployment from "./DevOpsDeployment";
+import AuthAndUtils from "./AuthAndUtils";
 
 const SkillSection = () => {
   return (
@@ -11,6 +12,7 @@ const SkillSection = () => {
       <Frontend />
       <Backend />
       <DevOpsDeployment />
+      <AuthAndUtils />
     </div>
   );
 };
