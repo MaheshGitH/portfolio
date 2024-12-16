@@ -46,7 +46,7 @@ const TopSection = () => {
 
   return (
     <header
-      className={`font-josefin-sans text-xl flex justify-between w-full sticky after:content-[''] after:absolute after:inset-0 after:backdrop-blur-sm after:-z-10 z-10 px-2 ${
+      className={`font-josefin-sans text-xl flex justify-between w-full sticky after:content-[''] after:absolute after:inset-0 after:backdrop-blur-md after:-z-10 z-10 px-2 ${
         isScrolled
           ? " top-2 after:bg-white/5 py-4 left-2 right-2 after:rounded-lg after:border after:border-white/20"
           : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20"

@@ -5,7 +5,7 @@ import Title from "../Title";
 
 const ProjectSection = () => {
   return (
-    <div id="projectsection" className="flex flex-col gap-52">
+    <div id="Projects" className="flex flex-col gap-52">
       <span className="-mb-28">
         <Title>Projects</Title>
       </span>

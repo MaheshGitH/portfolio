@@ -7,7 +7,7 @@ import AuthAndUtils from "./AuthAndUtils";
 
 const SkillSection = () => {
   return (
-    <div id="skillsection" className="flex flex-col gap-16">
+    <div id="Skills" className="flex flex-col gap-16">
       <Title>Tools I'm Familiar With</Title>
       <Frontend />
       <Backend />
