@@ -6,7 +6,7 @@ import Title from "../Title";
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div id="contactsection" className="flex flex-col gap-8">
       <span className="mb-8">
         <Title>Contact</Title>
       </span>

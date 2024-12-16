@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const AboutMeSection = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div id="aboutme" className="flex flex-col gap-8">
       <Title>About me</Title>
       <Picture />
       <p>
