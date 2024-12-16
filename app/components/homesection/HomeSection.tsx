@@ -5,7 +5,7 @@ import Picture from "./Picture";
 
 const HomeSection = () => {
   return (
-    <main className="relative -mt-12">
+    <main id="topsection" className="relative -mt-12">
       <Background />
       <Picture />
       <BottomSection />

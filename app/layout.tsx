@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={stylish.variable + " " + josefin_sans.variable}>
-      <body className="dark dark:text-white dark:bg-dark bg-light font-josefin-sans text-xl flex flex-col gap-52 px-4">
+      <body className="dark dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans text-xl flex flex-col gap-52 px-4">
         {children}
       </body>
     </html>
