@@ -1,6 +1,7 @@
 import React from "react";
 import Picture from "./Picture";
 import Title from "../Title";
+import Link from "next/link";
 
 const AboutMeSection = () => {
   return (
@@ -17,9 +18,13 @@ const AboutMeSection = () => {
         JavaScript.
       </p>
       <p>Now, I have built fun and unique projects using React and Next.js.</p>
-      <button className="bg-primary text-white py-2 px-8 w-fit rounded-lg">
+      <a
+        href="/resume.pdf"
+        download="MaheshKrishnan_Resume.pdf"
+        className="bg-primary text-white py-2 px-8 w-fit rounded-lg hover:bg-primary/70"
+      >
         Download my resume
-      </button>
+      </a>
     </div>
   );
 };

@@ -9,13 +9,14 @@ import {
   ReactIcon,
 } from "./icons";
 import { NextjsIcon } from "./icons";
+import CustomLayout from "./CustomLayout";
 
 const Frontend = () => {
   return (
     <div className="flex flex-col gap-8">
       <CustomTitle>Frontend Development</CustomTitle>
-      <div className="flex flex-wrap items-center gap-8">
-        Languages:
+
+      <CustomLayout title="Languages">
         <IconLayout name="HTML" hover="hover:text-red-600">
           <HTMLIcon className="size-9" />
         </IconLayout>
@@ -28,18 +29,16 @@ const Frontend = () => {
         <IconLayout name="Typescript" hover="hover:text-blue-800">
           <TypeScriptIcon className="size-9" />
         </IconLayout>
-      </div>
-      <div>
-        <div className="flex flex-wrap items-center gap-8">
-          Libraries/Frameworks:
-          <IconLayout name="React" hover="hover:text-blue-400">
-            <ReactIcon className="size-9" />
-          </IconLayout>
-          <IconLayout name="Next.js">
-            <NextjsIcon />
-          </IconLayout>
-        </div>
-      </div>
+      </CustomLayout>
+
+      <CustomLayout title="Libraries/Frameworks">
+        <IconLayout name="React" hover="hover:text-blue-400">
+          <ReactIcon className="size-9" />
+        </IconLayout>
+        <IconLayout name="Next.js">
+          <NextjsIcon />
+        </IconLayout>
+      </CustomLayout>
     </div>
   );
 };

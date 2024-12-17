@@ -4,12 +4,12 @@ export function NextjsIcon() {
       <path d="M16 32a16 16 0 1 0 0-32 16 16 0 0 0 0 32Z" fill="#000" />
       <path
         d="M26.58 28 12.29 9.6H9.6v12.8h2.15V12.32L24.9 29.31a16 16 0 0 0 1.69-1.3Z"
-        fill="url(#a)"
+        fill="url(#x)"
       />
-      <path d="M20.44 9.6h2.14v12.8h-2.14V9.6Z" fill="url(#b)" />
+      <path d="M20.44 9.6h2.14v12.8h-2.14V9.6Z" fill="url(#y)" />
       <defs>
         <linearGradient
-          id="a"
+          id="x"
           x1="19.38"
           y1="20.71"
           x2="25.69"
@@ -20,7 +20,7 @@ export function NextjsIcon() {
           <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
         <linearGradient
-          id="b"
+          id="y"
           x1="21.51"
           y1="9.6"
           x2="21.48"

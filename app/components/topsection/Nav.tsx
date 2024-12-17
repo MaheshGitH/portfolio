@@ -29,7 +29,7 @@ const Nav = ({ navState, setNavState }: Props) => {
 
   useEffect(() => {
     const sections = [
-      { id: "Home", threshold: 0 },
+      { id: "Home", threshold: 0.2 },
       { id: "About me", threshold: 0.3 },
       { id: "Skills", threshold: 0.3 },
       { id: "Projects", threshold: 0.2 },

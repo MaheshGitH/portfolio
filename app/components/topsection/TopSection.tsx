@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import Nav from "./Nav";
 import { FaCircleHalfStroke } from "react-icons/fa6";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { IoIosClose } from "react-icons/io";
+import Logo from "./Logo";
 
 const TopSection = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,7 +53,8 @@ const TopSection = () => {
           : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20"
       }  duration-200`}
     >
-      <Image src="/logo.png" alt="Logo" priority width={75} height={37} />
+      <Logo />
+
       <div className="flex gap-8 justify-between items-center relative">
         <button onClick={handleDarkToggle}>
           <FaCircleHalfStroke className="size-6 dark:fill-white" />
@@ -64,7 +66,11 @@ const TopSection = () => {
               toggleNavState();
             }}
           >
-            <CgMenuRightAlt className="size-8 dark:fill-white" />
+            {navState ? (
+              <IoIosClose className="size-8 dark:fill-white" />
+            ) : (
+              <CgMenuRightAlt className="size-8 dark:fill-white" />
+            )}
           </button>
 
           <Nav setNavState={() => toggleNavState()} navState={navState} />

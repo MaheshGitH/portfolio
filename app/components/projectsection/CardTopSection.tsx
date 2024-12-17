@@ -21,8 +21,10 @@ const CardTopSection = ({ name, description, link }: Props) => {
         Live at:{" "}
         <Link
           target="_blank"
-          className="text-secondary underline underline-offset-4"
-          href="https://yt-stats.netlify.app"
+          className={`text-secondary hover:text-secondary/70 duration-200 underline underline-offset-4 ${
+            link === "no link" ? "pointer-events-none" : ""
+          }`}
+          href={link}
         >
           {link}
           <RiExternalLinkLine className="inline-block size-4 ml-px mt-1" />
