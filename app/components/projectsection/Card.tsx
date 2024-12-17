@@ -11,7 +11,7 @@ interface Props {
 const Card = ({ imageSrc, imagePos, bgColor }: Props) => {
   return (
     <div className={`mt-40 h-[344px] w-[344px] relative ${bgColor} mx-auto`}>
-      <div className="h-[200px] w-[150px] rounded-lg  absolute -z-10 overflow-hidden">
+      <div className="h-[200px] w-[150px] rounded-lg absolute -z-10 overflow-hidden">
         <Image
           alt="overview page"
           src={imageSrc.src1}

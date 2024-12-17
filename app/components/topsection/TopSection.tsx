@@ -14,6 +14,8 @@ const TopSection = () => {
 
   const handleDarkToggle = () => {
     document.body.classList.toggle("dark");
+    const conatins = document.body.classList.contains("dark");
+    localStorage.setItem("theme", conatins ? "dark" : "light");
   };
 
   const toggleNavState = () => {
@@ -27,6 +29,16 @@ const TopSection = () => {
   };
 
   useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (!theme) return;
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, []);
+
+  useEffect(() => {
     if (navState) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
@@ -36,6 +48,7 @@ const TopSection = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
@@ -53,7 +66,9 @@ const TopSection = () => {
           : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20"
       }  duration-200`}
     >
-      <Logo />
+      <a href="/">
+        <Logo />
+      </a>
 
       <div className="flex gap-8 justify-between items-center relative">
         <button onClick={handleDarkToggle}>

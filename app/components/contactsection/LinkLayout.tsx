@@ -9,11 +9,11 @@ interface Props {
 const LinkLayout = ({ children, href }: Props) => {
   return (
     <Link
-      className="relative text-white dark:hover:text-white/70 duration-200 group"
+      className="relative text-black hover:text-black/70 dark:text-white dark:hover:text-white/70 duration-200 group"
       href={href}
     >
       {children}
-      <span className="absolute bg-white -bottom-1 left-1/2 right-1/2 h-0.5 group-hover:left-0 group-hover:right-0 duration-300 rounded-lg ease-out" />
+      <span className="absolute bg-black dark:bg-white -bottom-1 left-1/2 right-1/2 h-0.5 group-hover:left-0 group-hover:right-0 duration-300 rounded-lg ease-out" />
     </Link>
   );
 };
