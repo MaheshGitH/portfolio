@@ -1,7 +1,6 @@
 import React from "react";
 import Picture from "./Picture";
 import Title from "../Title";
-import Link from "next/link";
 
 const AboutMeSection = () => {
   return (
