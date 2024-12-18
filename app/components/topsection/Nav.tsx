@@ -51,7 +51,9 @@ const Nav = ({ navState, setNavState }: Props) => {
         threshold: s.threshold,
       });
       const element = document.getElementById(s.id);
-      observer.observe(element);
+      if (element) {
+        observer.observe(element);
+      }
     });
 
     return () => observer.disconnect();

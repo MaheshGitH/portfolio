@@ -1,12 +1,21 @@
 import type { Config } from "tailwindcss";
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 
 const config: Config = {
-  content: [
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: {
+    files: [
+      "./components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    extract,
+  },
   theme: {
+    screens,
+    fontSize,
     extend: {
+      screens: {
+        sml: "3.125rem",
+      },
       fontFamily: {
         stylish: "var(--font-stylish)",
         "josefin-sans": "var(--font-josefin-sans)",
@@ -36,6 +45,6 @@ const config: Config = {
     },
   },
   darkMode: "selector",
-  plugins: [],
+  plugins: [fluid],
 };
 export default config;
