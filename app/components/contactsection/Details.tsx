@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const Details = () => {
@@ -9,7 +8,7 @@ const Details = () => {
         <a
           href="mailto:maheshkrishnan1242@gmail.com"
           title="Send me an email"
-          className="text-primary hover:text-primary/70 underline underline-offset-4 duration-200"
+          className="text-primary hover:text-primary/70 underline underline-offset-4 duration-200 break-words"
         >
           MaheshKrishnan1242@gmail.com.
         </a>{" "}

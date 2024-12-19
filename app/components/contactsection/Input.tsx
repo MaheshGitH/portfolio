@@ -9,35 +9,49 @@ const Input = ({ varient, children }: Props) => {
   const [value, setValue] = useState("");
 
   return (
-    <div className="relative max-w-96">
-      <label
-        className={`absolute select-none cursor-text ${
-          value ? " hidden " : " block "
-        }`}
-        htmlFor={children}
-      >
-        {children}
-      </label>
+    <div className="relative">
       {varient === "input" ? (
-        <input
-          className="border-primary border-b-2 w-full bg-transparent outline-none pb-2 dark:text-white"
-          id={children}
-          autoComplete="off"
-          type="text"
-          onChange={(e) => {
-            setValue(e.target.value);
-          }}
-        />
+        <>
+          <input
+            className="w-full h-14 border-2 border-primary/35 bg-transparent py-1 px-2 outline-none focus:border-primary rounded-lg duration-200 peer text-white"
+            id={children}
+            autoComplete="off"
+            type="text"
+            onChange={(e) => {
+              setValue(e.target.value);
+            }}
+          />
+          <label
+            className={`absolute bg-dark select-none cursor-text -translate-y-1/2 peer-focus:left-3 peer-focus:top-0 peer-focus:text-white peer-focus:text-base duration-200 ${
+              value
+                ? " left-2 top-0 text-white text-base "
+                : " top-1/2 left-3  "
+            }`}
+            htmlFor={children}
+          >
+            {children}
+          </label>
+        </>
       ) : (
-        <textarea
-          className="border-primary border-b-2 w-full bg-transparent outline-none pb-2 resize-none dark:text-white"
-          id={children}
-          autoComplete="off"
-          rows={7}
-          onChange={(e) => {
-            setValue(e.target.value);
-          }}
-        ></textarea>
+        <>
+          <textarea
+            className="w-full border-2 border-primary/35 bg-transparent py-4 px-2 outline-none focus:border-primary rounded-lg duration-200 peer text-white"
+            id={children}
+            autoComplete="off"
+            rows={7}
+            onChange={(e) => {
+              setValue(e.target.value);
+            }}
+          ></textarea>
+          <label
+            className={`absolute bg-dark select-none cursor-text -translate-y-1/2 peer-focus:left-3 peer-focus:top-0 peer-focus:text-white peer-focus:text-base duration-200 ${
+              value ? " left-2 top-0 text-white text-base " : " top-7 left-3  "
+            }`}
+            htmlFor={children}
+          >
+            {children}
+          </label>
+        </>
       )}
     </div>
   );
