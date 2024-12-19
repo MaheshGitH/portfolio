@@ -9,10 +9,10 @@ interface Props {
   link: string;
 }
 
-const CardTopSection = ({ name, description, link }: Props) => {
+const ProjectSummary = ({ name, description, link }: Props) => {
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex gap-2 items-center">
+      <div className="flex flex-wrap items-center gap-2 w-fit">
         <h2 className="font-stylish text-4xl">{name}</h2>
         <Tag />
       </div>
@@ -22,7 +22,7 @@ const CardTopSection = ({ name, description, link }: Props) => {
         <Link
           target="_blank"
           className={`text-secondary hover:text-secondary/70 duration-200 underline underline-offset-4 ${
-            link === "no link" ? "pointer-events-none" : ""
+            link === "no link" ? "pointer-events-none" : " "
           }`}
           href={link}
         >
@@ -34,4 +34,4 @@ const CardTopSection = ({ name, description, link }: Props) => {
   );
 };
 
-export default CardTopSection;
+export default ProjectSummary;

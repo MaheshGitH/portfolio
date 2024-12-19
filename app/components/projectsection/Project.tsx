@@ -1,29 +1,17 @@
 import React from "react";
-import CardTopSection from "./CardTopSection";
-import Card from "./Card";
-import { ThreeImage, ThreePos } from "./types";
+import ProjectSummary from "./ProjectSummary";
+import CustomImage from "./CustomImage";
+import type { Project } from "./types";
 
-interface Props {
-  name: string;
-  description: string;
-  link: string;
-  imageSrc: ThreeImage;
-  position: ThreePos;
-  bgColor: string;
-}
-
-const Project = ({
-  name,
-  description,
-  link,
-  imageSrc,
-  position,
-  bgColor,
-}: Props) => {
+const Project = ({ name, description, link, image, left }: Project) => {
   return (
-    <div>
-      <CardTopSection name={name} description={description} link={link} />
-      <Card bgColor={bgColor} imageSrc={imageSrc} imagePos={position} />
+    <div
+      className={`flex flex-col gap-32 xl:gap-64 ${
+        left ? " xl:flex-row " : " xl:flex-row-reverse "
+      }`}
+    >
+      <ProjectSummary name={name} description={description} link={link} />
+      <CustomImage src={image} />
     </div>
   );
 };

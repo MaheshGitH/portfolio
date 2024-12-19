@@ -5,19 +5,21 @@ import Title from "../Title";
 
 const ProjectSection = () => {
   return (
-    <div id="Projects" className="flex flex-col gap-52">
-      <span className="-mb-28">
+    <div
+      id="Projects"
+      className="flex flex-col items-center gap-52 xl:gap-72 duration-200"
+    >
+      <div className="-mb-28 self-start">
         <Title>Projects</Title>
-      </span>
+      </div>
       {projects.map((project, index) => (
         <Project
           key={index}
           name={project.name}
           description={project.description}
           link={project.link}
-          imageSrc={project.image}
-          position={project.position}
-          bgColor={project.bgColor}
+          left={project.left}
+          image={project.image}
         />
       ))}
     </div>
