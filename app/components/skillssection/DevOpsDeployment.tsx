@@ -9,7 +9,7 @@ const DevOpsDeployment = () => {
     <div className="flex flex-col gap-8">
       <CustomTitle>DevOps & Deployment</CustomTitle>
       <CustomLayout title="Technology">
-        <IconLayout name="Docker" hover="hover:text-blue-600">
+        <IconLayout name="Docker" hover="group-hover:text-blue-600">
           <DockerIcon className="size-8" />
         </IconLayout>
       </CustomLayout>

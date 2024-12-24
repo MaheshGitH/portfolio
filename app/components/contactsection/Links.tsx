@@ -5,7 +5,7 @@ import LinkLayout from "./LinkLayout";
 
 const Links = () => {
   return (
-    <div className="flex gap-12">
+    <div className="flex gap-12 h-fit">
       <LinkLayout href="https://x.com/xyzmahesh">
         <FaXTwitter className="size-8" />
       </LinkLayout>

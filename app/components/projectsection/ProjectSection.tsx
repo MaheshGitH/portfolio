@@ -7,7 +7,7 @@ const ProjectSection = () => {
   return (
     <div
       id="Projects"
-      className="flex flex-col items-center gap-52 xl:gap-72 duration-200"
+      className="flex flex-col items-center gap-52 xl:gap-72 duration-200 "
     >
       <div className="-mb-28 self-start">
         <Title>Projects</Title>

@@ -12,7 +12,7 @@ const Backend = () => {
         <IconLayout name="MongoDB">
           <MongoIcon />
         </IconLayout>
-        <IconLayout name="Firebase" hover="hover:text-yellow-500">
+        <IconLayout name="Firebase" hover="group-hover:text-yellow-500">
           <FirebaseIcon className="size-8" />
         </IconLayout>
       </CustomLayout>

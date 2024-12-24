@@ -5,10 +5,15 @@ import Picture from "./Picture";
 
 const HomeSection = () => {
   return (
-    <main id="Home" className="relative -mt-12">
+    <main id="Home" className="relative -mt-40">
       <Background />
-      <Picture />
-      <BottomSection />
+      <div
+        className="flex flex-col gap-24 justify-center items-center absolute inset-0 lg:flex-row-reverse
+      "
+      >
+        <Picture />
+        <BottomSection />
+      </div>
     </main>
   );
 };

@@ -60,14 +60,12 @@ const Nav = ({ navState, setNavState }: Props) => {
   }, []);
 
   return (
-    <motion.ul
-      animate={{ opacity: navState ? 1 : 0, scale: navState ? 1 : 0.95 }}
-      initial={{ opacity: 0, scale: 0.95 }}
-      transition={{
-        duration: 0.3,
-      }}
-      style={{ pointerEvents: navState ? "auto" : "none" }}
-      className="flex flex-col gap-8 absolute top-8 right-5 text-nowrap translate-x-0 bg-white/5 border border-secondary backdrop-blur-md rounded-lg py-4 px-8 z-30"
+    <ul
+      className={`flex flex-col md:flex-row md:-top-3 md:-right-10 md:bg-white/0 md:backdrop-blur-none md:border-none gap-8 absolute top-8 right-5 text-nowrap translate-x-0 bg-white/5 border border-secondary backdrop-blur-md rounded-lg py-4 px-8 z-30 ${
+        navState
+          ? " pointer-events-auto opacity-100 scale-100 "
+          : " pointer-events-none opacity-0 scale-95 md:pointer-events-auto md:opacity-100 md:scale-100 "
+      } duration-200  `}
     >
       <NavLayout
         varient
@@ -105,7 +103,7 @@ const Nav = ({ navState, setNavState }: Props) => {
       >
         Contact
       </NavLayout>
-    </motion.ul>
+    </ul>
   );
 };
 export default Nav;

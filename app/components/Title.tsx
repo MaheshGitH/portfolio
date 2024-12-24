@@ -26,8 +26,9 @@ const Title = ({ children }: Props) => {
       observer.disconnect();
     };
   }, []);
+
   return (
-    <h2 className="flex flex-col gap-1 w-fit select-none text-3xl font-stylish mb-8">
+    <h2 className="flex flex-col gap-1 w-fit select-none ~sm/lg:~text-3xl/4xl font-stylish mb-16">
       {children}
       <motion.span
         initial={{

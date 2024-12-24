@@ -60,27 +60,23 @@ const TopSection = () => {
 
   return (
     <header
-      className={`font-josefin-sans text-xl flex justify-between w-full sticky after:content-[''] after:absolute after:inset-0 after:backdrop-blur-md after:-z-10 z-10 px-2 ${
+      className={`font-josefin-sans text-xl flex justify-between mx-auto sticky after:content-[''] after:absolute after:inset-0 after:backdrop-blur-md after:-z-10 z-10 px-2 ${
         isScrolled
-          ? " top-2 after:bg-white/5 py-4 left-2 right-2 after:rounded-lg after:border after:border-white/20"
-          : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20"
-      }  duration-200`}
+          ? " top-2 after:bg-white/5 py-4 left-2 right-2 after:rounded-lg after:border after:border-secondary/40 px-5 ~sml/md:~w-[3rem]/[45rem] "
+          : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20 w-full "
+      }  duration-200 `}
     >
       <a href="/">
         <Logo />
       </a>
 
-      <div className="flex gap-8 justify-between items-center relative">
+      <div className="flex md:flex-row-reverse gap-8 justify-between items-center relative">
         <button onClick={handleDarkToggle}>
           <FaCircleHalfStroke className="size-6 dark:fill-white" />
         </button>
 
         <div ref={navRef} className="relative h-8">
-          <button
-            onClick={() => {
-              toggleNavState();
-            }}
-          >
+          <button className="md:hidden" onClick={toggleNavState}>
             {navState ? (
               <IoIosClose className="size-8 dark:fill-white" />
             ) : (

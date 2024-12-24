@@ -17,22 +17,22 @@ const Frontend = () => {
       <CustomTitle>Frontend Development</CustomTitle>
 
       <CustomLayout title="Languages">
-        <IconLayout name="HTML" hover="hover:text-red-600">
+        <IconLayout name="HTML" hover="group-hover:text-red-600">
           <HTMLIcon className="size-9" />
         </IconLayout>
-        <IconLayout name="CSS" hover="hover:text-blue-600">
+        <IconLayout name="CSS" hover="group-hover:text-blue-600">
           <CSSIcon className="size-9" />
         </IconLayout>
-        <IconLayout name="Javascript" hover="hover:text-yellow-500">
+        <IconLayout name="Javascript" hover="group-hover:text-yellow-500">
           <JavaScriptIcon className="size-9" />
         </IconLayout>
-        <IconLayout name="Typescript" hover="hover:text-blue-800">
+        <IconLayout name="Typescript" hover="group-hover:text-blue-800">
           <TypeScriptIcon className="size-9" />
         </IconLayout>
       </CustomLayout>
 
       <CustomLayout title="Libraries/Frameworks">
-        <IconLayout name="React" hover="hover:text-blue-400">
+        <IconLayout name="React" hover="group-hover:text-blue-400">
           <ReactIcon className="size-9" />
         </IconLayout>
         <IconLayout name="Next.js">

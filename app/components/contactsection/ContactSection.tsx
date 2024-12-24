@@ -6,16 +6,18 @@ import Title from "../Title";
 
 const ContactSection = () => {
   return (
-    <div id="Contact" className="flex flex-col gap-8 mx-2">
-      <span className="mb-8">
-        <Title>Contact</Title>
-      </span>
-      <Details />
-      <Links />
-      <div>
-        Designed by: <span className="font-stylish">Mahesh</span>
+    <div id="Contact" className="flex flex-col">
+      <Title>Contact</Title>
+      <div className="flex flex-col max-w-7xl mx-auto w-full">
+        <div className="flex flex-col gap-8 mb-8">
+          <Details />
+          <Links />
+          <div className="text-nowrap h-fit">
+            Designed by: <span className="font-stylish">Mahesh</span>
+          </div>
+        </div>
+        <Contact />
       </div>
-      <Contact />
     </div>
   );
 };
