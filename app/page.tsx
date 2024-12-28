@@ -5,6 +5,7 @@ import ProjectSection from "./components/projectsection/ProjectSection";
 import ContactSection from "./components/contactsection/ContactSection";
 import TopSection from "./components/topsection/TopSection";
 import AboutMeSection from "./components/aboutsection/AboutMeSection";
+import Footer from "./components/Footer";
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
       <SkillSection />
       <ProjectSection />
       <ContactSection />
+      <Footer />
     </>
   );
 }
