@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 
 interface Props {
   children: string;
@@ -8,6 +8,9 @@ interface Props {
 
 const CustomTitle = ({ children }: Props) => {
   const [darkMode, SetDarkMode] = useState(true);
+
+  const h3Ref = useRef<HTMLHeadingElement>(null);
+  const isInView = useInView(h3Ref, { once: true, amount: 1 });
 
   useEffect(() => {
     const checkDarkMode = () => {
@@ -27,7 +30,7 @@ const CustomTitle = ({ children }: Props) => {
     };
   }, []);
   return (
-    <h3 className="flex flex-col w-fit gap-1">
+    <h3 ref={h3Ref} className="flex flex-col w-fit gap-1">
       {children}
       <motion.span
         initial={{
@@ -38,11 +41,11 @@ const CustomTitle = ({ children }: Props) => {
         animate={{
           background: `linear-gradient(90deg, #32B621 0% , #${
             darkMode ? "0B0A0D" : "EEEDEF"
-          } 90%`,
+          } ${isInView ? "90%" : "0%"}`,
         }}
         transition={{
           duration: 2,
-          ease: "backOut",
+          ease: "easeInOut",
         }}
         className="h-0.5 -mt-1 rounded"
       />

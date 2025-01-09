@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 
 interface Props {
   children: string;
@@ -8,6 +8,9 @@ interface Props {
 
 const Title = ({ children }: Props) => {
   const [darkMode, SetDarkMode] = useState(true);
+
+  const h2Ref = useRef<HTMLHeadingElement>(null);
+  const isInView = useInView(h2Ref, { once: true, amount: 1 });
 
   useEffect(() => {
     const checkDarkMode = () => {
@@ -28,7 +31,10 @@ const Title = ({ children }: Props) => {
   }, []);
 
   return (
-    <h2 className="flex flex-col gap-1 w-fit select-none ~sm/lg:~text-3xl/4xl font-stylish mb-16">
+    <h2
+      ref={h2Ref}
+      className="flex flex-col gap-1 w-fit select-none ~sm/lg:~text-3xl/4xl font-stylish mb-16"
+    >
       {children}
       <motion.span
         initial={{
@@ -39,7 +45,7 @@ const Title = ({ children }: Props) => {
         animate={{
           background: `linear-gradient(90deg, #32B621 0% , #${
             darkMode ? "0B0A0D" : "EEEDEF"
-          } 90%`,
+          } ${isInView ? "90%" : "0%"}`,
         }}
         transition={{
           duration: 2,

@@ -10,7 +10,7 @@ const Contact = () => {
   const [state, action] = useFormState(sendMail, { success: false });
   return (
     <div className="max-w-3xl w-full lg:self-end">
-      <span className="hidden lg:inline-block">Send Me a Message</span>
+      <span>Send Me a Message</span>
 
       <form action={action} className="flex flex-col gap-8 w-full mt-8">
         <Input state={state.success} name="name">
