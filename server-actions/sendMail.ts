@@ -3,11 +3,7 @@
 import { Resend } from "resend";
 import MailTemplate from "./MailTemplate";
 
-interface FormState {
-  success: boolean;
-}
-
-export default async function sendMail(state: FormState, formData: FormData) {
+export default async function sendMail(formData: FormData) {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
@@ -24,8 +20,4 @@ export default async function sendMail(state: FormState, formData: FormData) {
       message: String(message),
     }),
   });
-
-  return {
-    success: true,
-  };
 }

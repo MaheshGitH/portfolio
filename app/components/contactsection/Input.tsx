@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 
 interface Props {
   name: string;
-  state: boolean;
+  state?: boolean;
   children: string;
 }
 
 const Input = ({ children, name, state }: Props) => {
   const [value, setValue] = useState("");
   useEffect(() => {
-    if (state) {
+    if (!state) {
       setValue("");
     }
   }, [state]);

@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface Props {
-  state: boolean;
+  state?: boolean;
   children: string;
 }
 
@@ -9,7 +9,9 @@ const TextArea = ({ children, state }: Props) => {
   const [value, setValue] = useState("");
 
   useEffect(() => {
-    setValue("");
+    if (!state) {
+      setValue("");
+    }
   }, [state]);
 
   return (
