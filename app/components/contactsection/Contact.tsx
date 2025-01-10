@@ -5,6 +5,7 @@ import Input from "./Input";
 import sendMail from "../../../server-actions/sendMail";
 import TextArea from "./TextArea";
 import SendButton from "./SendButton";
+import ToastNotification from "./ToastNotification";
 
 const Contact = () => {
   const [state, setState] = useState(false);
@@ -27,6 +28,7 @@ const Contact = () => {
           }}
         />
       </form>
+      <ToastNotification isPending={state} />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Title from "../Title";
 
 const ContactSection = () => {
   return (
-    <div id="Contact" className="flex flex-col mb-32">
+    <div id="Contact" className="flex flex-col mb-32 relative">
       <Title>Contact</Title>
       <div className="flex flex-col max-w-7xl mx-auto w-full">
         <div className="flex flex-col gap-8 mb-8">
