@@ -11,7 +11,7 @@ interface Props {
 const NavLayout = ({ navState, onClick, inView, children, varient }: Props) => {
   return (
     <li
-      className={` text-black dark:text-white ${
+      className={`text-black dark:text-white ${
         navState
           ? `${!varient ? " mt-0 " : ""}`
           : `${!varient ? " -mt-14 md:mt-0 " : ""} `

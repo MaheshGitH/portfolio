@@ -60,10 +60,10 @@ const TopSection = () => {
 
   return (
     <header
-      className={`font-josefin-sans text-xl flex justify-between mx-auto sticky after:content-[''] after:absolute after:inset-0 after:backdrop-blur-md after:-z-10 z-10 px-2 ${
+      className={`font-josefin-sans text-xl flex justify-between mx-auto sticky after:content-[''] after:absolute after:inset-0 after:backdrop-blur-md after:-z-10 z-10 px-2 w-full ${
         isScrolled
-          ? " top-2 after:bg-white/5 py-4 left-2 right-2 after:rounded-lg after:border after:border-secondary/40 px-5 ~sml/md:~w-[3rem]/[45rem] "
-          : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20 w-full "
+          ? " top-2 after:bg-white/5 py-4 left-2 right-2 after:rounded-lg after:border after:border-secondary/40 px-5 "
+          : " bg-white/0 top-0 pt-10 pb-2 left-0 border-white/20 "
       }  duration-200 `}
     >
       <a href="/">
