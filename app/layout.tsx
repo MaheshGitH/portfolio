@@ -2,6 +2,7 @@ import React from "react";
 import "./globals.css";
 import { Metadata } from "next";
 import { Josefin_Sans, Stylish } from "next/font/google";
+import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
   title: "Mahesh's portfolio",
@@ -22,14 +23,21 @@ const josefin_sans = Josefin_Sans({
   weight: "400",
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const theme = cookieStore.get("theme");
+
   return (
     <html lang="en" className={stylish.variable + " " + josefin_sans.variable}>
-      <body className="dark dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans text-xl flex flex-col gap-40 px-4 overflow-x-clip relative">
+      <body
+        className={`${
+          theme ? theme.value : " dark "
+        } dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans px-2 relative h-[2000px]`}
+      >
         {children}
       </body>
     </html>
