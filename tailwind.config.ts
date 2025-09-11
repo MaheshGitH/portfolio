@@ -14,7 +14,7 @@ const config: Config = {
     fontSize,
     extend: {
       screens: {
-        sml: "3.125rem",
+        sml: "15.625rem",
       },
       fontFamily: {
         stylish: "var(--font-stylish)",
@@ -35,6 +35,14 @@ const config: Config = {
       },
       borderColor: {
         primary: "#2373EB",
+      },
+      stroke: {
+        primary: "#2373EB",
+        secondary: "#E7C027",
+      },
+      boxShadow: {
+        light: "0px 3px 16px rgba(0, 0, 0, 0.25)",
+        dark: "0px 3px 16px rgba(255, 255, 255, 0.25)",
       },
     },
   },
