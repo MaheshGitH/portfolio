@@ -36,7 +36,7 @@ export default async function RootLayout({
       <body
         className={`${
           theme ? theme.value : " dark "
-        } dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans px-2 relative h-[2000px]`}
+        } dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans relative h-[2000px]`}
       >
         {children}
       </body>

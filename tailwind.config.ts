@@ -24,6 +24,8 @@ const config: Config = {
         primary: "#2373EB",
         dark: "#121212",
         light: "#FFFFFF",
+        design: "#E3E3E3",
+        "design-dark": "#1E1E1E",
       },
       textColor: {
         primary: "#2373EB",

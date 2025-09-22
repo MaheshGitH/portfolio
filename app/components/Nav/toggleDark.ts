@@ -1,6 +1,5 @@
 export default function toggleDark() {
   const bodyElement = document.body.classList;
-
   if (bodyElement.contains("dark")) {
     bodyElement.replace("dark", "light");
     updateCookie("light");

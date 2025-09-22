@@ -27,7 +27,7 @@ const Nav = () => {
         isScrolled
           ? " shadow-light dark:shadow-dark mt-16 bg-dark p-2 rounded-lg "
           : ""
-      } duration-150 ~sml/lg:~text-xl/2xl`}
+      } duration-150 ~sml/lg:~text-xl/2xl z-[60]`}
     >
       <Logo />
       <Menu />

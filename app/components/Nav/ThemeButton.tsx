@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import toggleDark from "./toggleDark";
 
-const Theme = () => {
+const ThemeButton = () => {
   const [theme, setTheme] = useState<"DARK" | "LIGHT">();
   useEffect(() => {
     const bodyELement = document.body.classList;
@@ -17,4 +17,4 @@ const Theme = () => {
   );
 };
 
-export default Theme;
+export default ThemeButton;
