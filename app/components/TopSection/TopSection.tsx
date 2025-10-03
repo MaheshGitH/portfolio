@@ -1,4 +1,5 @@
 import React from "react";
+import AboutMe from "./AboutMe";
 
 const TopSection = () => {
   return (
@@ -9,6 +10,7 @@ const TopSection = () => {
       <h2 className="text-center ~sml/xl:~text-3xl/[2.5rem]">
         Building clean and reliable full-stack applications.
       </h2>
+      <AboutMe />
     </div>
   );
 };
