@@ -3,6 +3,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { Josefin_Sans, Stylish } from "next/font/google";
 import { cookies } from "next/headers";
+import Nav from "./components/Nav/Nav";
 
 export const metadata: Metadata = {
   title: "Mahesh's portfolio",
@@ -38,6 +39,7 @@ export default async function RootLayout({
           theme ? theme.value : " dark "
         } dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans relative`}
       >
+        <Nav></Nav>
         {children}
       </body>
     </html>
