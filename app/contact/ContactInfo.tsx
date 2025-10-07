@@ -11,7 +11,9 @@ const ContactInfo = () => {
       <div className="~sml/lg:~text-lg/xl">
         <p className="mb-6">
           Mail ID:{" "}
-          <span className="text-primary">MaheshKrishnan1242@gmail.com</span>
+          <a href="mailto:maheshkrishnan@gmail.com" className="text-primary">
+            MaheshKrishnan1242@gmail.com
+          </a>
         </p>
         <p className="text-secondary-light">
           Let's connect — ideas, projects, or job opportunities, all welcome →

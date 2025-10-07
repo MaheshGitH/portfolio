@@ -32,7 +32,7 @@ const ProjectLayout = ({
             " nolink"
           ) : (
             <Link
-              href="live"
+              href={link}
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary underline underline-offset-2"

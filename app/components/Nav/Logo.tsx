@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="flex gap-2">
+    <a href="/" className="flex gap-2">
       <svg
         className="~sm/xl:~size-6/7"
         viewBox="0 0 24 24"
@@ -33,7 +33,7 @@ const Logo = () => {
       <span className="~/xl:~text-[1.125rem]/[1.5rem] ~/xl:~leading-[1.125rem]/[1.5rem] pt-2">
         Mahesh
       </span>
-    </div>
+    </a>
   );
 };
 

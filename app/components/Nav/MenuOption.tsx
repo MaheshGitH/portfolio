@@ -13,7 +13,7 @@ interface MenuOptions {
 
 const MenuOption = ({ Open }: Props) => {
   const options: MenuOptions[] = [
-    { href: "home", name: "Home" },
+    { href: "/", name: "Home" },
     { href: "skills", name: "Skills" },
     { href: "projects", name: "Projects" },
     { href: "contact", name: "Contact" },
@@ -25,10 +25,7 @@ const MenuOption = ({ Open }: Props) => {
         <span className="md:hidden">
           <ThemeButton />
         </span>
-        <button
-          onClick={() => Open(false)}
-          className="flex gap-2 hover:text-primary-dark duration-200"
-        >
+        <button onClick={() => Open(false)} className="flex gap-2">
           <svg
             className="~sml/lg:~size-4/[1.125rem] mt-1"
             viewBox="0 0 22 22"
@@ -44,7 +41,7 @@ const MenuOption = ({ Open }: Props) => {
               strokeLinejoin="round"
             />
           </svg>
-          Close
+          <span className=" hover:text-primary-dark duration-200">Close</span>
         </button>
       </div>
       <ul className="flex flex-col justify-center h-screen gap-20  font-stylish ~sml/lg:~text-4xl/[2.5rem] text-secondary-light">
