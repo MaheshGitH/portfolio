@@ -20,7 +20,7 @@ const SkillLayout = ({ heading, skills }: Props) => {
           </li>
         ))}
       </ul>
-      <div className="h-[0.5px] w-full bg-gradient-to-r from-white dark:from-[#121212] from-[20%] via-[#121212] dark:via-white via-[50%] to-white dark:to-[#121212] to-[80%]" />
+      <div className="h-px w-full bg-gradient-to-r from-white dark:from-[#121212] from-[30%] via-[#121212] dark:via-white via-[50%] to-white dark:to-[#121212] to-[70%]" />
     </div>
   );
 };
