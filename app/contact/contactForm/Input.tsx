@@ -3,10 +3,11 @@ import React from "react";
 interface InputProps {
   children: string;
   eg: string;
+  name: string;
   textarea?: boolean;
 }
 
-const Input = ({ children, eg, textarea }: InputProps) => {
+const Input = ({ children, eg, textarea, name }: InputProps) => {
   return (
     <div className="flex justify-center gap-4 ~sml/lg:~text-base/xl">
       <label className="mt-7" htmlFor={children}>
@@ -17,6 +18,7 @@ const Input = ({ children, eg, textarea }: InputProps) => {
           <textarea
             id={children}
             autoComplete="off"
+            name={name}
             className="bg-transparent outline-none resize-none placeholder-[#6b7280] ~sml/lg:~w-28/[35rem]"
             rows={3}
             placeholder={eg}
@@ -25,6 +27,7 @@ const Input = ({ children, eg, textarea }: InputProps) => {
           <input
             id={children}
             autoComplete="off"
+            name={name}
             className="bg-transparent outline-none placeholder-[#6b7280] ~sml/lg:~w-28/[35rem]"
             type="text"
             placeholder={eg}
