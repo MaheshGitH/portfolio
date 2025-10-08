@@ -11,7 +11,7 @@ const Socials = () => {
         href="https://github.com/MaheshGitH/"
         className="flex gap-2 items-end text-primary w-fit"
       >
-        <VscGithub className="~sml/lg:~size-6/7 text-white" />
+        <VscGithub className="~sml/lg:~size-6/7 text-black dark:text-white" />
         MaheshGitH
         <RiExternalLinkLine className="mb-[6px]" />
       </Link>

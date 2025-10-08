@@ -58,7 +58,7 @@ const Shapes = ({ state, congrats }: Props) => {
       <div
         className={`~lg/2xl:~size-32/40 ${
           state.id === "LeftTopRect" || clickState.leftTopRect
-            ? "bg-design-dark"
+            ? " bg-design dark:bg-design-dark"
             : "bg-design-dark/0"
         } rounded-tr-lg rounded-b-lg absolute top-0 left-0 duration-300`}
       />
@@ -71,7 +71,7 @@ const Shapes = ({ state, congrats }: Props) => {
           <path
             className={`${
               state.id === "RightTopTri" || clickState.rightTopTri
-                ? "fill-[#1e1e1e]"
+                ? "fill-[#e3e3e3] dark:fill-[#1e1e1e]"
                 : "fill-[#1e1e1e]/0"
             }  duration-300`}
             d="M2.65686 13.6569C-2.38286 8.61713 1.18647 -7.62939e-06 8.31371 -7.62939e-06H101C105.418 -7.62939e-06 109 3.58172 109 7.99999V100.686C109 107.814 100.383 111.383 95.3431 106.343L2.65686 13.6569Z"
@@ -88,7 +88,7 @@ const Shapes = ({ state, congrats }: Props) => {
           <path
             className={` ${
               state.id === "LeftBottomTri" || clickState.leftBottomTri
-                ? "fill-[#1e1e1e]"
+                ? "fill-[#e3e3e3] dark:fill-[#1e1e1e]"
                 : "fill-[#1e1e1e]/0"
             }  duration-300`}
             d="M2.65686 13.6569C-2.38286 8.61713 1.18647 -7.62939e-06 8.31371 -7.62939e-06H101C105.418 -7.62939e-06 109 3.58172 109 7.99999V100.686C109 107.814 100.383 111.383 95.3431 106.343L2.65686 13.6569Z"
@@ -100,14 +100,14 @@ const Shapes = ({ state, congrats }: Props) => {
         className={`absolute top-1/2 left-[20%] -translate-y-1/2 ~lg/2xl:~size-32/40 rounded-tr-lg
     rounded-br-lg rounded-bl-lg rounded-tl-[200px] ${
       state.id === "MiddleTri" || clickState.middleTri
-        ? "bg-design-dark"
+        ? "bg-design dark:bg-design-dark"
         : "bg-design-dark/0"
     } duration-300`}
       />
       <div
         className={`absolute top-[15%] right-1/2 translate-x-1/2 ~lg/2xl:~size-32/40 rounded-t-[90px] rounded-b-lg ${
           state.id === "MiddleRect" || clickState.middleRect
-            ? "bg-design-dark"
+            ? "bg-design dark:bg-design-dark"
             : "bg-design-dark/0"
         } duration-300`}
       />
@@ -115,7 +115,7 @@ const Shapes = ({ state, congrats }: Props) => {
         <svg
           className={`~lg/2xl:~size-32/40  ${
             state.id === "MiddleGrid" || clickState.middleGrid
-              ? "fill-[#1e1e1e]"
+              ? "fill-[#e3e3e3] dark:fill-[#1e1e1e]"
               : "fill-[#1e1e1e]/0"
           } duration-300`}
           viewBox="0 0 200 200"
@@ -159,7 +159,7 @@ const Shapes = ({ state, congrats }: Props) => {
       <div
         className={`absolute ~lg/2xl:~size-32/40 bottom-0 right-0 rounded-t-lg rounded-bl-lg ${
           state.id === "RightBottomRect" || clickState.rightBottomRect
-            ? "bg-design-dark"
+            ? "bg-design dark:bg-design-dark"
             : "bg-design-dark/0"
         } duration-300`}
       />

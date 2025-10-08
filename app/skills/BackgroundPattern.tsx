@@ -5,8 +5,8 @@ const BackgroundPattern = () => {
     <svg
       width="211"
       height="780"
+      className="fill-[#E3E3E3] dark:fill-[#1E1E1E]"
       viewBox="0 0 211 780"
-      fill="#1E1E1E"
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle cx="5" cy="5" r="5" />

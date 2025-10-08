@@ -13,14 +13,14 @@ const SkillLayout = ({ heading, skills }: Props) => {
       <ul className="grid grid-flow-col grid-cols-2 grid-rows-2 sm:grid-rows-1 sm:grid-cols-3 gap-8 text-xl text-secondary-light md:mx-auto">
         {skills.map((skill, index) => (
           <li key={index} className="flex items-center font-stylish">
-            <span className="text-primary-dark">
+            <span className="text-primary-light dark:text-primary-dark">
               <BsDot className="size-8" />
             </span>
             {skill}
           </li>
         ))}
       </ul>
-      <div className="h-[0.5px] w-full bg-gradient-to-r from-[#121212] from-[20%] via-white via-[50%] to-[#121212] to-[80%]" />
+      <div className="h-[0.5px] w-full bg-gradient-to-r from-white dark:from-[#121212] from-[20%] via-[#121212] dark:via-white via-[50%] to-white dark:to-[#121212] to-[80%]" />
     </div>
   );
 };

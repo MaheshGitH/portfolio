@@ -41,14 +41,16 @@ const MenuOption = ({ Open }: Props) => {
               strokeLinejoin="round"
             />
           </svg>
-          <span className=" hover:text-primary-dark duration-200">Close</span>
+          <span className="hover:text-black dark:hover:text-primary-dark duration-200">
+            Close
+          </span>
         </button>
       </div>
       <ul className="flex flex-col justify-center h-screen gap-20  font-stylish ~sml/lg:~text-4xl/[2.5rem] text-secondary-light">
         {options.map((option, index) => (
           <li key={index}>
             <a
-              className="hover:text-primary-dark w-full text-center inline-block duration-200"
+              className="hover:text-black dark:hover:text-primary-dark w-full text-center inline-block duration-200"
               href={option.href}
             >
               {option.name}

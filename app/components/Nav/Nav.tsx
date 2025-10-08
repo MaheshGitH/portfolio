@@ -25,7 +25,7 @@ const Nav = () => {
     <nav
       className={`flex flex-col fixed left-2 right-2 max-w-[87.188rem] mx-auto sml:flex-row justify-between items-center mt-[4.625rem] ${
         isScrolled
-          ? " shadow-light dark:shadow-dark mt-16 bg-dark p-2 rounded-lg "
+          ? " shadow-light dark:shadow-dark mt-16 bg-light dark:bg-dark p-2 rounded-lg "
           : ""
       } duration-150 ~sml/lg:~text-xl/2xl z-[60]`}
     >

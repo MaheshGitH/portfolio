@@ -20,7 +20,10 @@ const Menu = () => {
         className="inline-flex gap-2 items-center my-auto"
       >
         <TbMenu className="~sml/lg:~size-5/7 text-primary" />
-        <span className="pt-1 text-secondary-light hover:text-primary-dark duration-200 ~/lg:~text-[1rem]/[1.5rem] ~/lg:~leading-[1rem]/[1.5rem]">
+        <span
+          className="pt-1 text-secondary-light hover:text-primary-light dark:hover:text-primary-dark
+         duration-200 ~/lg:~text-[1rem]/[1.5rem] ~/lg:~leading-[1rem]/[1.5rem]"
+        >
           Menu
         </span>
       </button>
