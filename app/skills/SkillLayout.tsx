@@ -12,7 +12,7 @@ const SkillLayout = ({ heading, skills }: Props) => {
       <h4 className="~sml/lg:~text-2xl/3xl">### {heading}</h4>
       <ul className="grid grid-flow-col grid-cols-2 grid-rows-2 sm:grid-rows-1 sm:grid-cols-3 gap-8 text-xl text-secondary-light md:mx-auto">
         {skills.map((skill, index) => (
-          <li key={index} className="flex items-center">
+          <li key={index} className="flex items-center font-stylish">
             <span className="text-primary-dark">
               <BsDot className="size-8" />
             </span>

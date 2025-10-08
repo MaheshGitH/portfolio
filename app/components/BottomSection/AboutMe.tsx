@@ -18,7 +18,7 @@ const AboutMe = ({ children }: Props) => {
               <PersonSvg />
               <span className="~sml/lg:~text-2xl/3xl pt-2">Brief Intro</span>
             </h4>
-            <p className="text-secondary-light ~sml/lg:~text-xl/2xl mt-8 max-w-3xl">
+            <p className="text-secondary-light ~sml/lg:~text-xl/2xl mt-8 max-w-3xl font-stylish">
               I'm Mahesh Krishnan, a Full-Stack Developer with hands-on
               experience building personal projects using React.js and Next.js.
             </p>
@@ -28,7 +28,7 @@ const AboutMe = ({ children }: Props) => {
               <PiGraduationCap className="size-10 text-secondary" />
               <span className="~sml/lg:~text-2xl/3xl pt-2">Education</span>
             </h4>
-            <div className="text-secondary-light ~sml/lg:~text-xl/2xl mt-8 max-w-3xl">
+            <div className="text-secondary-light ~sml/lg:~text-xl/2xl mt-8 max-w-3xl font-stylish">
               <p className="mb-1">Bachelor's in Computer Science</p>
               <p>Jamal Mohamed College (2022 – 2025)</p>
             </div>

@@ -8,7 +8,7 @@ const ContactInfo = () => {
         <ContactIcon />
         <span>Contact Info</span>
       </div>
-      <div className="~sml/lg:~text-lg/xl">
+      <div className="~sml/lg:~text-lg/xl font-stylish">
         <p className="mb-6">
           Mail ID:{" "}
           <a href="mailto:maheshkrishnan@gmail.com" className="text-primary">

@@ -23,10 +23,10 @@ const ProjectLayout = ({
           {projectIcon}
           <span className="mt-1">{projectName}</span>
         </div>
-        <p className="text-secondary-light ~sml/lg:~text-lg/xl">
+        <p className="text-secondary-light ~sml/lg:~text-lg/xl font-stylish">
           {description}
         </p>
-        <span className="flex items-center gap-1 ~sml/lg:~text-lg/xl text-secondary-light">
+        <span className="flex items-center gap-1 ~sml/lg:~text-lg/xl text-secondary-light font-stylish">
           Live at:
           {link === "nolink" ? (
             " nolink"
