@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to my portfolio! Explore my projects, skills, and experience in web development. I'm currently on the journey to becoming a software engineer. Discover my progress and the work I'm passionate about.",
   verification: {
-    google: "N_RRRw2MotI1UYegfbmG6DZUaJX8gHchMS",
+    google: "N_RRRw2MotI1UYegfbmG6DZUaJX8gHchMS-tr9v0sZ0",
   },
 };
 
