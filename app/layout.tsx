@@ -7,9 +7,11 @@ import Nav from "./components/Nav/Nav";
 
 export const metadata: Metadata = {
   title: "Mahesh's portfolio",
-
   description:
     "Welcome to my portfolio! Explore my projects, skills, and experience in web development. I'm currently on the journey to becoming a software engineer. Discover my progress and the work I'm passionate about.",
+  verification: {
+    google: "N_RRRw2MotI1UYegfbmG6DZUaJX8gHchMS",
+  },
 };
 
 const stylish = Stylish({
