@@ -1,3 +1,12 @@
+import { Button } from "@/components/ui/button";
+import { StatefulButtonDemo } from "./components/StatefulButtonDemo";
+
 export default function Home() {
-  return <h1 className="bg-black">Helo world</h1>;
+  return (
+    <div className="">
+      <StatefulButtonDemo />
+
+      <Button className="text-green-400">Shadcn button</Button>
+    </div>
+  );
 }
