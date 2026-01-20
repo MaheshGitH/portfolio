@@ -19,6 +19,15 @@ const config: Config = {
       fontFamily: {
         lato: "var(--font-lato)",
       },
+      colors: {
+        primary: "#00E0E0",
+        "primary-faded": "rgba(0 224 224 / 0.06)",
+        tag: "#23272C",
+        border: "rgba(255 255 255 / 0.12)",
+        secondary: "#9CA3AF",
+        surface: "#14191F",
+        background: "#0B0F14",
+      },
     },
   },
   plugins: [fluid, require("tailwindcss-animate")],
