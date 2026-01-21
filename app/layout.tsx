@@ -21,11 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${lato.variable} antialiased bg-background text-white max-w-[1520px] mx-auto`}
-      >
+      <body className={`${lato.variable} antialiased bg-background text-white`}>
         <NavBar />
         {children}
+        <div className="h-screen"></div>
+        <div className="h-screen"></div>
       </body>
     </html>
   );
