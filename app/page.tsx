@@ -1,4 +1,5 @@
 import AboutSection from "./components/about-section/AboutSection";
+import SkillsSection from "./components/skills-section/SkillsSection";
 import TopSection from "./components/top-section/TopSection";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <TopSection />
       <div className="flex flex-col gap-44">
         <AboutSection />
+        <SkillsSection />
       </div>
     </div>
   );
