@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/nav/NavBar";
+import Footer from "./components/Footer";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -24,8 +25,8 @@ export default function RootLayout({
       <body className={`${lato.variable} antialiased bg-background text-white`}>
         <NavBar />
         {children}
-        <div className="h-screen"></div>
-        <div className="h-screen"></div>
+
+        <Footer />
       </body>
     </html>
   );
