@@ -9,10 +9,18 @@ export default function Home() {
     <div className="px-2 max-w-[1520px] mx-auto">
       <TopSection />
       <div className="flex flex-col gap-44">
-        <AboutSection />
-        <SkillsSection />
-        <ProjectSection />
-        <ContactSection />
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="skills">
+          <SkillsSection />
+        </section>
+        <section id="projects">
+          <ProjectSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
       </div>
     </div>
   );

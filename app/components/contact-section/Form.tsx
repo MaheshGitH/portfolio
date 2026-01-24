@@ -10,7 +10,12 @@ const Form = () => {
         label="Email"
         placeholder="your.email@example.com"
       />
-      <FormInput textarea id="message" label="Message" placeholder="" />
+      <FormInput
+        textarea
+        id="message"
+        label="Message"
+        placeholder="Tell me about your project or opportunity..."
+      />
 
       <div className="self-end max-md:w-full">
         <SendButton />

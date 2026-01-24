@@ -1,3 +1,5 @@
+import HoverEffectContainer from "./HoverEffectContainer";
+
 interface Props {
   section: "01." | "02." | "03." | "04.";
   title: string;
@@ -11,7 +13,9 @@ const SectionHeader = ({ section, title }: Props) => {
 
         <p>{title}</p>
       </div>
-      <span className="h-px bg-surface w-full" />
+      <HoverEffectContainer>
+        <span className="h-px bg-border w-full" />
+      </HoverEffectContainer>
     </div>
   );
 };
