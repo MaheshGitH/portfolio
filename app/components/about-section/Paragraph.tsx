@@ -2,7 +2,7 @@ const Paragraph = () => {
   return (
     <div className="~text-xl/2xl max-w-6xl mx-auto">
       <p>
-        I’m a
+        I’m a{" "}
         <span className="text-primary">self-taught full-stack developer</span>{" "}
         focused on building practical, user-centric web applications. I enjoy
         turning complex ideas into simple, maintainable interfaces that actually

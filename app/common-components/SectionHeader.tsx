@@ -11,7 +11,7 @@ const SectionHeader = ({ section, title }: Props) => {
 
         <p>{title}</p>
       </div>
-      <span className="h-px bg-primary-faded w-full" />
+      <span className="h-px bg-surface w-full" />
     </div>
   );
 };

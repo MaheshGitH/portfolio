@@ -3,7 +3,7 @@ import Paragraph from "./Paragraph";
 
 const AboutSection = () => {
   return (
-    <div>
+    <div className="mt-20">
       <SectionHeader section="01." title="About" />
       <Paragraph />
     </div>

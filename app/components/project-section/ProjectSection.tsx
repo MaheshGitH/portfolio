@@ -7,7 +7,7 @@ const ProjectSection = () => {
     <div>
       <SectionHeader section="03." title="Projects" />
 
-      <div className="grid mx-auto w-full gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 mx-auto w-fit gap-8">
         {projectCard.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

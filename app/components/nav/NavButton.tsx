@@ -13,7 +13,7 @@ const NavButton = ({ Icon, name }: Props) => {
         <span className="-mb-1">{name}</span>
       </button>
 
-      <button className="px-4 py-3 hover:bg-tag rounded-md ~text-xs/sm max-md:hidden">
+      <button className="px-4 py-3 hover:bg-surface rounded-md ~text-xs/sm max-md:hidden">
         {name}
       </button>
     </>

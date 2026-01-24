@@ -46,7 +46,7 @@ const backend = [
   "Auth.js",
 ];
 
-const tools = ["Docker", "Linux", "Figma"];
+const tools = ["Docker", "Linux", "GitHub", "Figma", "Neovim", "VS Code"];
 
 const skillCard: SkillCardType[] = [
   { Icon: CodeXml, name: "Frontend", tags: frontend },

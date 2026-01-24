@@ -6,6 +6,7 @@ import { CircleUserRound, Code, Cog, FolderOpenDot } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MobileSheet } from "./MobileSheet";
 import NavButton from "./NavButton";
+import HoverEffectContainer from "@/app/common-components/HoverEffectContainer";
 
 export const navButton = [
   { icon: Code, name: "About" },
@@ -27,27 +28,40 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="fixed w-full max-w-full top-2 z-50 flex justify-center">
-      <div
+    <div
+      className={cn(
+        "fixed w-full max-w-full top-2 z-50 flex justify-center duration-200",
+        scrolled ? "px-3 top-3" : "px-0 top-2",
+      )}
+    >
+      <HoverEffectContainer
+        radius={150}
         className={cn(
-          "flex justify-between items-center px-4 py-2 rounded-lg duration-300",
-          scrolled
-            ? "bg-surface shadow-md max-w-[1380px] w-full translate-y-4 scale-[0.97]"
-            : "w-full translate-y-0 scale-100 max-w-[1520px] ",
+          "max-w-[1380px] w-full",
+          scrolled ? "rounded-lg" : "rounded-none",
         )}
       >
-        <AppLogo />
+        <div
+          className={cn(
+            "flex justify-between items-center px-4 py-2 duration-300 border-border",
+            scrolled
+              ? "bg-background shadow-md max-w-[1380px] w-full rounded-lg border"
+              : "w-full scale-100 max-w-[1520px] bg-black border-b",
+          )}
+        >
+          <AppLogo />
 
-        <nav className="max-md:hidden">
-          {navButton.map((nb, index) => (
-            <NavButton key={index} name={nb.name} />
-          ))}
-        </nav>
+          <nav className="max-md:hidden">
+            {navButton.map((nb, index) => (
+              <NavButton key={index} name={nb.name} />
+            ))}
+          </nav>
 
-        <div className="md:hidden h-6">
-          <MobileSheet />
+          <div className="md:hidden h-6">
+            <MobileSheet />
+          </div>
         </div>
-      </div>
+      </HoverEffectContainer>
     </div>
   );
 };

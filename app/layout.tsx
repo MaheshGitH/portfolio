@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} antialiased bg-background text-white`}>
+      <body
+        className={`${lato.variable} antialiased bg-black text-white overflow-x-hidden`}
+      >
         <NavBar />
         {children}
 

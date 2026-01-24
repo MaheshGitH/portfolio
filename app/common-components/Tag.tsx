@@ -9,7 +9,7 @@ const Tag = ({ name, reducePadding }: Props) => {
   return (
     <span
       className={cn(
-        "~text-xs/sm w-fit bg-tag border border-border duration-150 rounded-md",
+        "~text-xs/sm w-fit bg-surface border border-border duration-150 rounded-md",
         reducePadding ? " p-2 " : " p-3 ",
       )}
     >
