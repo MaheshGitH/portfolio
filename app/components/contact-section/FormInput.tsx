@@ -20,6 +20,7 @@ const FormInput = ({ id, label, placeholder, textarea }: Props) => {
         {textarea ? (
           <textarea
             id={id}
+            name={id}
             autoComplete="off"
             placeholder={placeholder}
             className="flex outline-none w-full rounded-md border border-border bg-background px-4 py-3 text-white placeholder:text-secondary focus:border-primary/50 resize-none"
@@ -28,6 +29,7 @@ const FormInput = ({ id, label, placeholder, textarea }: Props) => {
         ) : (
           <input
             id={id}
+            name={id}
             autoComplete="off"
             placeholder={placeholder}
             className="outline-none w-full px-4 py-3 placeholder:text-secondary rounded-md bg-background border border-border focus:border-primary/50"

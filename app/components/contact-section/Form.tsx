@@ -1,9 +1,23 @@
+"use client";
+
 import SendButton from "./SendButton";
 import FormInput from "./FormInput";
+import sendMail from "@/app/server-actions/sendMail";
+import { useTransition } from "react";
 
 const Form = () => {
+  const [isPending, startTransition] = useTransition();
+
+  function onSubmit(formData: FormData) {
+    startTransition(async () => {
+      await sendMail(formData);
+    });
+  }
   return (
-    <div className="w-full flex flex-col gap-4 items-center ~text-xs/sm ">
+    <form
+      action={onSubmit}
+      className="w-full flex flex-col gap-4 items-center ~text-xs/sm "
+    >
       <FormInput id="name" label="Name" placeholder="Your name" />
       <FormInput
         id="email"
@@ -18,9 +32,9 @@ const Form = () => {
       />
 
       <div className="self-end max-md:w-full">
-        <SendButton />
+        <SendButton isPending={isPending} />
       </div>
-    </div>
+    </form>
   );
 };
 
