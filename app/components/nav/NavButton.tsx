@@ -36,7 +36,7 @@ const NavButton = ({ Icon, name, onClick }: Props) => {
   return (
     <>
       {/* Small screen */}
-      <HoverEffectContainer className="rounded-md">
+      <HoverEffectContainer className="rounded-md inline-block">
         <button
           onClick={() => {
             handleNavClick(name.toLocaleLowerCase());

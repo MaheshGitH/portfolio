@@ -3,14 +3,19 @@ import { LucideIcon } from "lucide-react";
 
 interface Props {
   Icon: LucideIcon;
+  href: string;
 }
 
-const SocialButton = ({ Icon }: Props) => {
+const SocialButton = ({ Icon, href }: Props) => {
   return (
     <HoverEffectContainer className="rounded-lg">
-      <button className="p-3 bg-background rounded-lg border border-border hover:text-primary duration-150">
+      <a
+        href={href}
+        target="_blank"
+        className="p-3 block bg-background rounded-lg border border-border hover:text-primary duration-150"
+      >
         <Icon className="size-6" />
-      </button>
+      </a>
     </HoverEffectContainer>
   );
 };

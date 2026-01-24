@@ -18,8 +18,8 @@ const ContactSection = () => {
         </p>
         <Form />
         <div className="self-center flex gap-8">
-          {socialButton.map((icon, index) => (
-            <SocialButton key={index} Icon={icon} />
+          {socialButton.map((social, index) => (
+            <SocialButton key={index} Icon={social.icon} href={social.href} />
           ))}
         </div>
       </div>
@@ -29,4 +29,8 @@ const ContactSection = () => {
 
 export default ContactSection;
 
-const socialButton = [Github, Linkedin, Mail];
+const socialButton = [
+  { icon: Github, href: "https://github.com/MaheshGitH/" },
+  { icon: Linkedin, href: "https://linkedin.com/in/naanmaheshkrishnan/" },
+  { icon: Mail, href: "mailto:maheshkrishnan1242@gmail.com" },
+];
