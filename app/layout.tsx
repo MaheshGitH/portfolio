@@ -1,9 +1,14 @@
-import React from "react";
+import type { Metadata } from "next";
+import { Lato } from "next/font/google";
 import "./globals.css";
-import { Metadata } from "next";
-import { Josefin_Sans, Stylish } from "next/font/google";
-import { cookies } from "next/headers";
-import Nav from "./components/Nav/Nav";
+import NavBar from "./components/nav/NavBar";
+import Footer from "./components/Footer";
+
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Mahesh's portfolio",
@@ -14,35 +19,19 @@ export const metadata: Metadata = {
   },
 };
 
-const stylish = Stylish({
-  subsets: ["latin"],
-  variable: "--font-stylish",
-  weight: "400",
-});
-
-const josefin_sans = Josefin_Sans({
-  subsets: ["latin"],
-  variable: "--font-josefin-sans",
-  weight: "400",
-});
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
-  const cookieStore = await cookies();
-  const theme = cookieStore.get("theme");
-
+}>) {
   return (
-    <html lang="en" className={stylish.variable + " " + josefin_sans.variable}>
+    <html lang="en">
       <body
-        className={`${
-          theme ? theme.value : " dark "
-        } dark:text-white dark:bg-dark bg-light duration-150 font-josefin-sans relative`}
+        className={`${lato.variable} antialiased bg-black text-white overflow-x-hidden`}
       >
-        <Nav></Nav>
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -10,45 +10,26 @@ const config: Config = {
     extract,
   },
   theme: {
-    screens,
-    fontSize,
     extend: {
+      fontSize,
       screens: {
-        sml: "15.625rem",
+        sml: "20rem",
+        ...screens,
       },
       fontFamily: {
-        stylish: "var(--font-stylish)",
-        "josefin-sans": "var(--font-josefin-sans)",
+        lato: "var(--font-lato)",
       },
-      backgroundColor: {
-        primary: "#2373EB",
-        dark: "#121212",
-        light: "#FFFFFF",
-        design: "#E3E3E3",
-        "design-dark": "#1E1E1E",
-      },
-      textColor: {
-        primary: "#2373EB",
-        secondary: "#E7C027",
-        surface: "#1E1E1E",
-        "primary-light": "#111317",
-        "secondary-light": "#6B7280",
-        "primary-dark": "#F9FAFB",
-      },
-      borderColor: {
-        primary: "#2373EB",
-      },
-      stroke: {
-        primary: "#2373EB",
-        secondary: "#E7C027",
-      },
-      boxShadow: {
-        light: "0px 3px 16px rgba(0, 0, 0, 0.25)",
-        dark: "0px 3px 16px rgba(255, 255, 255, 0.25)",
+      colors: {
+        primary: "#00E0E0",
+        "primary-faded": "rgba(0 224 224 / 0.06)",
+        tag: "#23272C",
+        border: "rgba(255 255 255 / 0.12)",
+        secondary: "#9CA3AF",
+        surface: "#14191F",
+        background: "#0B0F14",
       },
     },
   },
-  darkMode: "selector",
-  plugins: [fluid],
+  plugins: [fluid, require("tailwindcss-animate")],
 };
 export default config;
