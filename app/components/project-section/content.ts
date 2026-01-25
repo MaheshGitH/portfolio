@@ -96,7 +96,7 @@ export const projectCard: ProjectCard[] = [
     tags: algopadTag,
     links: {
       live: "nolink",
-      source: "https://github.com/MaheshGitH/expense-tracker/",
+      source: "https://github.com/MaheshGitH/algopad/",
     },
   },
 ];
