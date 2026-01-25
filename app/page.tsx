@@ -7,7 +7,9 @@ import TopSection from "./components/top-section/TopSection";
 export default function Home() {
   return (
     <div className="px-2 max-w-[1520px] mx-auto">
-      <TopSection />
+      <section id="top">
+        <TopSection />
+      </section>
       <div className="flex flex-col gap-44">
         <section id="about">
           <AboutSection />

@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { MobileSheet } from "./MobileSheet";
 import NavButton from "./NavButton";
 import HoverEffectContainer from "@/app/common-components/HoverEffectContainer";
+import handleScrollIntoView from "@/lib/handleScroll";
 
 export const navButton = [
   { icon: Code, name: "About" },
@@ -49,7 +50,9 @@ const NavBar = () => {
               : "w-full scale-100 max-w-[1520px] bg-black border-b",
           )}
         >
-          <AppLogo />
+          <button onClick={() => handleScrollIntoView("top")}>
+            <AppLogo />
+          </button>
 
           <nav className="max-md:hidden">
             {navButton.map((nb, index) => (
