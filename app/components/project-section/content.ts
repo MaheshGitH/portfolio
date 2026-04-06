@@ -36,6 +36,14 @@ const algopadTag = [
   "Figma",
 ];
 
+const codeClarityTag = [
+  "TypeScript",
+  "Next.js",
+  "Tailwind CSS",
+  "WhisperAI",
+  "GropCloudAPI",
+];
+
 export const projectCard: ProjectCard[] = [
   {
     title: "YT-Stats",
@@ -49,8 +57,8 @@ export const projectCard: ProjectCard[] = [
     },
     tags: ytStatsTag,
     links: {
-      live: "https://yt-stats.netlify.app/",
-      source: "https://github.com/MaheshGitH/yt-stats/",
+      live: "https://ytstatsapp.netlify.app/",
+      source: "https://github.com/MaheshGitH/ytstats/",
     },
   },
   {
@@ -79,8 +87,8 @@ export const projectCard: ProjectCard[] = [
     },
     tags: expenseTrackerTag,
     links: {
-      live: "https://money-overview.vercel.app/dashboard",
-      source: "https://github.com/MaheshGitH/expense-tracker/",
+      live: "https://whyamibroke.vercel.app/dashboard",
+      source: "https://github.com/MaheshGitH/expensetracker/",
     },
   },
   {
@@ -97,6 +105,20 @@ export const projectCard: ProjectCard[] = [
     links: {
       live: "nolink",
       source: "https://github.com/MaheshGitH/algopad/",
+    },
+  },
+  {
+    title: "CodeClarity",
+    description:
+      "CodeClarity lets developers paste code, explain it aloud, and get instant transcripts with feedback on clarity, pace, and structure.",
+    images: {
+      image_1: "codeclarity.webp",
+      alt_1: "codeclarity homepage",
+    },
+    tags: codeClarityTag,
+    links: {
+      live: "https://codeclarityapp.vercel.app/",
+      source: "https://github.com/MaheshGitH/codeclarity/",
     },
   },
 ];

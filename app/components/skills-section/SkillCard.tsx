@@ -4,8 +4,8 @@ import HoverEffectContainer from "@/app/common-components/HoverEffectContainer";
 
 const SkillCard = ({ Icon, name, tags }: SkillCardType) => {
   return (
-    <HoverEffectContainer className="rounded-xl" radius={300}>
-      <div className="flex flex-col gap-6 bg-background border border-border rounded-xl ~p-4/8 duration-150 max-w-96 w-full">
+    <HoverEffectContainer className="rounded-xl h-fit" radius={300}>
+      <div className="flex flex-col gap-6 bg-background border border-border rounded-xl ~p-4/8 duration-150 max-w-96 w-full h-fit">
         <div className="bg-primary-faded text-primary p-3 rounded-lg mb-2 w-fit">
           <Icon className="~size-7/8" />
         </div>

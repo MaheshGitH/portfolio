@@ -40,13 +40,22 @@ const frontend = [
 const backend = [
   "Express",
   "Socket.IO",
-  "Prisma",
+  "Prisma ORM",
   "MongoDB",
   "Firebase",
   "Auth.js",
 ];
 
-const tools = ["Docker", "Linux", "GitHub", "Figma", "Neovim", "VS Code"];
+const tools = [
+  "Docker",
+  "Linux",
+  "GitHub",
+  "Figma",
+  "Neovim",
+  "VS Code",
+  "Groq Cloud API",
+  "Whisper AI",
+];
 
 const skillCard: SkillCardType[] = [
   { Icon: CodeXml, name: "Frontend", tags: frontend },
